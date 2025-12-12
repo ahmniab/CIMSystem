@@ -1,4 +1,4 @@
-namespace CEMSystem.Components
+namespace CIMSystemGUI.Components
 
 open System
 open Avalonia.FuncUI
@@ -6,9 +6,9 @@ open Avalonia.FuncUI.DSL
 open Avalonia.Controls
 open Avalonia.Layout
 open Avalonia.Media
-open CEMSystem.Models
-open CEMSystem.Services
-open CEMSystem.Helpers
+open CIMSystemGUI.Models
+open CIMSystemGUI.Services
+open CIMSystemGUI.Helpers
 
 module CinemaView =
 

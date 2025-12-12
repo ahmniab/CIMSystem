@@ -1,4 +1,4 @@
-namespace CEMSystem.Components
+namespace CIMSystemGUI.Components
 
 open System
 open Avalonia.FuncUI
@@ -6,8 +6,8 @@ open Avalonia.FuncUI.DSL
 open Avalonia.Controls
 open Avalonia.Layout
 open Avalonia.Media
-open CEMSystem.Models
-open CEMSystem.Helpers
+open CIMSystemGUI.Models
+open CIMSystemGUI.Helpers
 
 module StaffValidationView =
     let view () =

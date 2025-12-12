@@ -1,8 +1,8 @@
-namespace CEMSystem.Helpers
+namespace CIMSystemGUI.Helpers
 
 open Avalonia.FuncUI
-open CEMSystem.Models
-open CEMSystem.Services
+open CIMSystemGUI.Models
+open CIMSystemGUI.Services
 
 module ValidationUIHelpers =
 

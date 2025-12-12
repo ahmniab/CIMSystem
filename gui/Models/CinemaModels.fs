@@ -1,4 +1,4 @@
-namespace CEMSystem.Models
+namespace CIMSystemGUI.Models
 
 open System
 

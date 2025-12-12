@@ -1,9 +1,9 @@
-namespace CEMSystem.Services
+namespace CIMSystemGUI.Services
 
 open System
 open System.IO
 open System.Text.Json
-open CEMSystem.Models
+open CIMSystemGUI.Models
 
 module TicketService =
 

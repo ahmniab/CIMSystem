@@ -1,4 +1,4 @@
-namespace CEMSystem.Components
+namespace CIMSystemGUI.Components
 
 open Avalonia.FuncUI
 open Avalonia.FuncUI.DSL

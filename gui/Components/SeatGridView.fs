@@ -1,10 +1,10 @@
-namespace CEMSystem.Components
+namespace CIMSystemGUI.Components
 
 open Avalonia.FuncUI.DSL
 open Avalonia.Controls
 open Avalonia.Layout
 open Avalonia.Media
-open CEMSystem.Models
+open CIMSystemGUI.Models
 
 module SeatGridView =
 

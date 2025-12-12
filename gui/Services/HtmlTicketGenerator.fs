@@ -1,8 +1,8 @@
-namespace CEMSystem.Services
+namespace CIMSystemGUI.Services
 
 open System
 open System.IO
-open CEMSystem.Models
+open CIMSystemGUI.Models
 
 module HtmlTicketGenerator =
 

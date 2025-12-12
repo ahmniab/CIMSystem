@@ -1,8 +1,8 @@
-namespace CEMSystem.Helpers
+namespace CIMSystemGUI.Helpers
 
 open System
-open CEMSystem.Models
-open CEMSystem.Services
+open CIMSystemGUI.Models
+open CIMSystemGUI.Services
 
 module BookingHelpers =
 
