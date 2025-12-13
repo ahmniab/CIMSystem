@@ -44,8 +44,7 @@ type BookingRequest =
       CustomerName: string }
 
 type BookingResult =
-    | Success of string
-    | SuccessWithTicket of string * TicketInfo
+    | Success of string * TicketInfo
     | SeatAlreadyBooked
     | InvalidSeat
     | Error of string
