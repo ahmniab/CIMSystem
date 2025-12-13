@@ -70,7 +70,7 @@ module BookingHelpersTests =
         | Result.Error msg -> msg |> should equal "Please select a seat first"
         | _ -> failwith "Expected Error result"
 
-    [<Fact>]
+    [<Fact>]                        
     let ``validateBookingInput should return error when customer name is empty`` () =
         // Arrange
         let selectedSeat = Some(1, 2)
