@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/home/ahmniab/.cache/JetBrains/Rider2024.3/resharper-host/temp/Rider/vAny/CoverageData/_CIMSystem.-893370724/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ad0373c_002D5dd5_002D4faa_002D8473_002Dc5448e72822d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from BookingHelpersTests.fs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;ProjectFile&gt;C7C087B5-7890-4B81-929B-5CEC9BF552E1/d:Helpers/f:BookingHelpersTests.fs&lt;/ProjectFile&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::C7C087B5-7890-4B81-929B-5CEC9BF552E1::net8.0::CIMSystemGUI.Tests.Helpers.ValidationHelpersTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::C7C087B5-7890-4B81-929B-5CEC9BF552E1::net8.0::CIMSystemGUI.Tests.Helpers.TicketHelpersTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::C7C087B5-7890-4B81-929B-5CEC9BF552E1::net8.0::CIMSystemGUI.Tests.Services.TicketServiceTests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFile&gt;C7C087B5-7890-4B81-929B-5CEC9BF552E1/d:Services/f:CinemaServiceTests.fs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;C7C087B5-7890-4B81-929B-5CEC9BF552E1/d:Models/f:CinemaModelsTests.fs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

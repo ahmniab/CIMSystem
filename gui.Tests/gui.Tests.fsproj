@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Helpers/BookingHelpersTests.fs" />
+    <Compile Include="Helpers/ValidationHelpersTests.fs" />
+    <Compile Include="Helpers/TicketHelpersTests.fs" />
+    <Compile Include="Services/TicketServiceTests.fs" />
+    <Compile Include="Services/CinemaServiceTests.fs" />
+    <Compile Include="Models/CinemaModelsTests.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.6.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="FsUnit.xUnit" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\gui\gui.fsproj" />
+  </ItemGroup>
+
+</Project>
