@@ -147,7 +147,7 @@ module CinemaService =
 
                     match ticketResult with
                     | TicketCreated ticketInfo ->
-                        SuccessWithTicket($"Success! Booked {hall.MovieTitle}", ticketInfo)
+                        Success($"Success! Booked {hall.MovieTitle}", ticketInfo)
                     | TicketError msg -> Error $"Ticket Error: {msg}"
                     | _ -> Error "Unknown ticket error"
 
