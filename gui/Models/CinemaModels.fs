@@ -2,13 +2,10 @@ namespace CIMSystemGUI.Models
 
 open System
 
-// Seat status enum
 type SeatStatus =
     | Available = 0
     | Booked = 1
 
-// Seat data structure
-[<CLIMutable>]
 type Seat =
     { Row: int
       Column: int
@@ -16,22 +13,39 @@ type Seat =
       BookedBy: string option
       BookingTime: DateTime option }
 
-// Cinema hall configuration
+type Movie =
+    { Id: string
+      Title: string }
+
+type PhysicalHall =
+    { Id: string
+      Name: string
+      Width: int
+      Height: int }
+
 type CinemaHall =
-    { Width: int // 20 seats
-      Height: int // 11 rows
+    { Id: string
+      PhysicalHallId: string 
+      Name: string
+      MovieId: string
+      MovieTitle: string
+      StartTime: DateTime
+      EndTime: DateTime
+      Width: int
+      Height: int
       Seats: Seat[,] }
 
-// Booking request
+type CinemaComplex = 
+    { Halls: CinemaHall list }
+
 type BookingRequest =
     { Row: int
       Column: int
       CustomerName: string }
 
-// Booking result
 type BookingResult =
     | Success of string
-    | SuccessWithTicket of string * TicketInfo // Message and ticket info
+    | SuccessWithTicket of string * TicketInfo
     | SeatAlreadyBooked
     | InvalidSeat
     | Error of string
