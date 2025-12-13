@@ -1,173 +1,182 @@
 namespace CIMSystemGUI.Services
 
 open System
-open System.IO
-open System.Text.Json
-
 open CIMSystemGUI.Models
-
+open CIMSystemGUI.Data
 
 module CinemaService =
-    let private dataFilePath = "cinema_bookings.json"
 
-    // Create initial cinema hall with all seats available
-    let createCinemaHall width height =
-        let seats =
-            Array2D.create
-                height
-                width
-                { Row = 0
-                  Column = 0
-                  Status = SeatStatus.Available
-                  BookedBy = None
-                  BookingTime = None }
 
-        // Initialize each seat with correct coordinates
-        for row in 0 .. height - 1 do
-            for col in 0 .. width - 1 do
-                seats.[row, col] <-
-                    { Row = row + 1
-                      Column = col + 1
-                      Status = SeatStatus.Available
-                      BookedBy = None
-                      BookingTime = None }
+    // ==========================================
+    // 3. PHYSICAL HALLS MANAGEMENT 
+    // ==========================================
 
-        { Width = width
-          Height = height
-          Seats = seats }
+    let getAllPhysicalHalls () : PhysicalHall list =
+        match DB.loadPhysicalHalls() with
+        | Result.Ok halls -> halls
+        | Result.Error _ -> []
 
-    // Convert 2D array to list for JSON serialization
-    let private seatsToList (seats: Seat[,]) =
-        let height = seats.GetLength(0)
-        let width = seats.GetLength(1)
+    let addPhysicalHall (name: string) (width: int) (height: int) =
+        let halls = getAllPhysicalHalls()
+        let newHall = { Id = Guid.NewGuid().ToString(); Name = name; Width = width; Height = height }
+        let updated = halls @ [newHall]
+        DB.savePhysicalHalls updated
 
-        [ for row in 0 .. height - 1 do
-              for col in 0 .. width - 1 do
-                  yield seats.[row, col] ]
+    let deletePhysicalHall (id: string) =
+        let halls = getAllPhysicalHalls() |> List.filter (fun h -> h.Id <> id)
+        DB.savePhysicalHalls halls
 
-    // Convert list back to 2D array
-    let private listToSeats width height (seatList: Seat list) =
-        let seats =
-            Array2D.create
-                height
-                width
-                { Row = 0
-                  Column = 0
-                  Status = SeatStatus.Available
-                  BookedBy = None
-                  BookingTime = None }
+    // ==========================================
+    // 4. MOVIE MANAGEMENT 
+    // ==========================================
 
-        seatList
-        |> List.iteri (fun i seat ->
-            let row = i / width
-            let col = i % width
-            seats.[row, col] <- seat)
+    let getAllMovies () : Movie list =
+        match DB.loadMovies() with
+        | Result.Ok movies -> movies
+        | Result.Error _ -> []
 
-        seats
+    let addMovie (title: string) =
+        let movies = getAllMovies()
+        let newMovie = { Id = Guid.NewGuid().ToString(); Title = title }
+        let updated = movies @ [newMovie]
+        DB.saveMovies updated
 
-    // Serializable cinema data
-    [<CLIMutable>]
-    type SerializableCinema =
-        { Width: int
-          Height: int
-          Seats: Seat list }
+    let deleteMovie (id: string) =
+        let movies = getAllMovies() |> List.filter (fun m -> m.Id <> id)
+        DB.saveMovies movies
 
-    // Save cinema data to JSON file
-    let saveCinemaData (cinema: CinemaHall) =
-        try
-            let serializableData =
-                { Width = cinema.Width
-                  Height = cinema.Height
-                  Seats = seatsToList cinema.Seats }
+    // ==========================================
+    // 5. SCHEDULING & SESSIONS (الجدولة)
+    // ==========================================
+    
+    // إرجاع كل العروض المجدولة
+    let getAllSessions () =
+        match DB.loadAllSessions() with
+        | Result.Ok halls -> halls
+        | Result.Error _ -> []
+    
+    // Alias لدعم الكود القديم
+    let getAllHalls = getAllSessions 
 
-            let options = JsonSerializerOptions()
-            options.WriteIndented <- true
-            let json = JsonSerializer.Serialize(serializableData, options)
-            File.WriteAllText(dataFilePath, json)
-            Result.Ok()
-        with ex ->
-            Result.Error $"Failed to save data: {ex.Message}"
+    let getHallById (hallId: string) =
+        getAllSessions() |> List.tryFind (fun h -> h.Id = hallId)
 
-    // Load cinema data from JSON file
-    let loadCinemaData () : Result<CinemaHall, string> =
-        try
-            if File.Exists(dataFilePath) then
-                let json = File.ReadAllText(dataFilePath)
-                let data = JsonSerializer.Deserialize<SerializableCinema>(json)
-                let seats = listToSeats data.Width data.Height data.Seats
+    // === أهم دالة: التحقق من تعارض المواعيد ===
+    let isHallAvailable (physicalHallId: string) (newStart: DateTime) (newEnd: DateTime) =
+        let allSessions = getAllSessions()
+        // 1. نفلتر العروض التي تتم في نفس القاعة فقط
+        let hallSessions = allSessions |> List.filter (fun s -> s.PhysicalHallId = physicalHallId)
+        
+        // 2. نفحص وجود تداخل زمني
+        // التداخل يحدث إذا: (وقت البداية الجديد < وقت النهاية القديم) و (وقت النهاية الجديد > وقت البداية القديم)
+        let hasOverlap = 
+            hallSessions 
+            |> List.exists (fun s -> 
+                newStart < s.EndTime && newEnd > s.StartTime
+            )
+        
+        not hasOverlap // القاعة متاحة إذا لم يوجد تداخل
 
-                Result.Ok
-                    { Width = data.Width
-                      Height = data.Height
-                      Seats = seats }
-            else
-                // Create default cinema if file doesn't exist
-                let cinema = createCinemaHall 20 11
-                saveCinemaData cinema |> ignore
-                Result.Ok cinema
-        with ex ->
-            Result.Error $"Failed to load data: {ex.Message}"
+    // إضافة عرض جديد (Schedule Movie)
+    let scheduleMovie (physicalHall: PhysicalHall) (movie: Movie) (startT: DateTime) (endT: DateTime) =
+        // أولاً: نتأكد أن القاعة فارغة
+        if isHallAvailable physicalHall.Id startT endT then
+            let allSessions = getAllSessions()
+            let newId = $"session-{allSessions.Length + 1}-{DateTime.Now.Ticks}"
+            
+            // ننشئ العرض بناءً على أبعاد القاعة الفيزيائية
+            let newSession : CinemaHall = 
+                { Id = newId
+                  PhysicalHallId = physicalHall.Id
+                  Name = physicalHall.Name
+                  MovieId = movie.Id
+                  MovieTitle = movie.Title
+                  StartTime = startT
+                  EndTime = endT
+                  Width = physicalHall.Width
+                  Height = physicalHall.Height
+                  Seats = Array2D.create physicalHall.Height physicalHall.Width
+                             { Row = 0; Column = 0; Status = SeatStatus.Available
+                               BookedBy = None; BookingTime = None } }
+            
+            // تهيئة المقاعد بالإحداثيات الصحيحة
+            for row in 0 .. physicalHall.Height - 1 do
+                for col in 0 .. physicalHall.Width - 1 do
+                    newSession.Seats.[row, col] <- 
+                        { Row = row + 1; Column = col + 1
+                          Status = SeatStatus.Available
+                          BookedBy = None; BookingTime = None }
 
-    // Check if seat coordinates are valid
-    let private isValidSeat (cinema: CinemaHall) row col =
-        row >= 1 && row <= cinema.Height && col >= 1 && col <= cinema.Width
+            DB.saveAllSessions (allSessions @ [newSession])
+        else
+            Result.Error "Conflict: The hall is already booked for another movie during this time!"
 
-    // Book a seat and create ticket
-    let bookSeat (cinema: CinemaHall) (request: BookingRequest) =
-        if not (isValidSeat cinema request.Row request.Column) then
+    let deleteSession (sessionId: string) =
+        let all = getAllSessions() |> List.filter (fun h -> h.Id <> sessionId)
+        DB.saveAllSessions all
+
+    // ==========================================
+    // 6. BOOKING LOGIC (حجز التذاكر)
+    // ==========================================
+
+    // تحديث جلسة واحدة داخل قاعدة البيانات
+    let private updateHallInDb (updatedHall: CinemaHall) =
+        DB.updateSession updatedHall
+
+    let private isValidSeat (hall: CinemaHall) row col =
+        row >= 1 && row <= hall.Height && col >= 1 && col <= hall.Width
+
+    let bookSeat (hall: CinemaHall) (request: BookingRequest) =
+        if not (isValidSeat hall request.Row request.Column) then
             InvalidSeat
         else
             let rowIndex = request.Row - 1
             let colIndex = request.Column - 1
-            let currentSeat = cinema.Seats.[rowIndex, colIndex]
+            let currentSeat = hall.Seats.[rowIndex, colIndex]
             let bookingTime = DateTime.Now
 
             match currentSeat.Status with
             | SeatStatus.Available ->
-                // Book the seat
+                // تحديث حالة المقعد
                 let updatedSeat =
                     { currentSeat with
                         Status = SeatStatus.Booked
                         BookedBy = Some request.CustomerName
                         BookingTime = Some bookingTime }
 
-                cinema.Seats.[rowIndex, colIndex] <- updatedSeat
+                hall.Seats.[rowIndex, colIndex] <- updatedSeat
 
-                // Save updated cinema data
-                match saveCinemaData cinema with
+                // حفظ التغييرات
+                match updateHallInDb hall with
                 | Result.Ok() ->
-                    // Create ticket using the Services
+                    // إصدار التذكرة
                     let ticketResult =
-                        CIMSystemGUI.Services.TicketService.createTicket
+                        TicketService.createTicket
                             request.CustomerName
+                            hall.Id
+                            hall.Name        // <--- أضفنا هذا (الاسم للعرض)
+                            hall.MovieTitle
                             request.Row
                             request.Column
                             bookingTime
 
                     match ticketResult with
                     | TicketCreated ticketInfo ->
-                        let message =
-                            $"Seat {request.Row}-{request.Column} successfully booked for {request.CustomerName}"
+                        SuccessWithTicket($"Success! Booked {hall.MovieTitle}", ticketInfo)
+                    | TicketError msg -> Error $"Ticket Error: {msg}"
+                    | _ -> Error "Unknown ticket error"
 
-                        SuccessWithTicket(message, ticketInfo)
-                    | TicketError msg ->
-                        // Seat is booked but ticket creation failed
-                        Error $"Seat booked but ticket creation failed: {msg}"
-                    | _ ->
-                        // Handle unexpected ticket operation results
-                        Error "Unexpected error during ticket creation"
                 | Result.Error msg -> Error msg
+            
             | SeatStatus.Booked -> SeatAlreadyBooked
             | _ -> Error "Invalid seat status"
 
-    // Clear booking when ticket is redeemed
-    let clearBooking (cinema: CinemaHall) row col =
-        if not (isValidSeat cinema row col) then
-            Result.Error "Invalid seat"
+    let clearBooking (hall: CinemaHall) row col =
+        if not (isValidSeat hall row col) then Result.Error "Invalid seat"
         else
-            let rowIndex = row - 1
-            let colIndex = col - 1
-            let currentSeat = cinema.Seats.[rowIndex, colIndex]
+            let r = row - 1
+            let c = col - 1
+            let currentSeat = hall.Seats.[r, c]
 
             match currentSeat.Status with
             | SeatStatus.Booked ->
@@ -177,42 +186,23 @@ module CinemaService =
                         BookedBy = None
                         BookingTime = None }
 
-                cinema.Seats.[rowIndex, colIndex] <- updatedSeat
+                hall.Seats.[r, c] <- updatedSeat
 
-                match saveCinemaData cinema with
-                | Result.Ok() -> Result.Ok $"Seat {row}-{col} has been cleared"
+                match updateHallInDb hall with
+                | Result.Ok() -> Result.Ok "Seat cleared successfully"
                 | Result.Error msg -> Result.Error msg
-            | SeatStatus.Available -> Result.Error "Seat is not currently booked"
-            | _ -> Result.Error "Invalid seat status"
+            | _ -> Result.Error "Seat is not currently booked"
 
+    // ==========================================
+    // 7. STATISTICS
+    // ==========================================
 
-
-    // Get seat status
-    let getSeatStatus (cinema: CinemaHall) row col =
-        if not (isValidSeat cinema row col) then
-            None
-        else
-            Some cinema.Seats.[row - 1, col - 1]
-
-    // Get all booked seats
-    let getBookedSeats (cinema: CinemaHall) =
-        [ for row in 0 .. cinema.Height - 1 do
-              for col in 0 .. cinema.Width - 1 do
-                  let seat = cinema.Seats.[row, col]
-
-                  if seat.Status = SeatStatus.Booked then
-                      yield seat ]
-
-    // Get available seats count
-    let getAvailableSeatsCount (cinema: CinemaHall) =
+    let getAvailableSeatsCount (hall: CinemaHall) =
         let mutable count = 0
-
-        for row in 0 .. cinema.Height - 1 do
-            for col in 0 .. cinema.Width - 1 do
-                if cinema.Seats.[row, col].Status = SeatStatus.Available then
+        for row in 0 .. hall.Height - 1 do
+            for col in 0 .. hall.Width - 1 do
+                if hall.Seats.[row, col].Status = SeatStatus.Available then
                     count <- count + 1
-
         count
 
-    // Get total seats count
-    let getTotalSeatsCount (cinema: CinemaHall) = cinema.Width * cinema.Height
+    let getTotalSeatsCount (hall: CinemaHall) = hall.Width * hall.Height
