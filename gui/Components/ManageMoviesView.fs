@@ -69,7 +69,7 @@ module ManageMoviesView =
                                 StackPanel.children [
                                     for movie in movies.Current do
                                         yield Border.create [
-                                            Border.background Brushes.White
+                                            Border.background Brushes.Black
                                             Border.borderBrush Brushes.LightGray
                                             Border.borderThickness 1.0
                                             Border.cornerRadius 5.0

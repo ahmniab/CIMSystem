@@ -32,7 +32,7 @@ module ManageHallsView =
 
                     // Form
                     Border.create [
-                        Border.background Brushes.WhiteSmoke; Border.padding 15.0; Border.cornerRadius 10.0
+                        Border.background Brushes.Black; Border.padding 15.0; Border.cornerRadius 10.0
                         Border.child (
                             StackPanel.create [
                                 StackPanel.spacing 10.0
@@ -63,7 +63,7 @@ module ManageHallsView =
                                 StackPanel.children [
                                     for hall in halls.Current do
                                         yield Border.create [
-                                            Border.background Brushes.White; Border.padding 10.0; Border.cornerRadius 5.0; Border.borderBrush Brushes.LightGray; Border.borderThickness 1.0
+                                            Border.background Brushes.Black; Border.padding 10.0; Border.cornerRadius 5.0; Border.borderBrush Brushes.LightGray; Border.borderThickness 1.0
                                             Border.child (
                                                 DockPanel.create [
                                                     DockPanel.children [

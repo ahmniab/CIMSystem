@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket - Movie 1</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #e0e5ec; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .ticket { background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 100%; max-width: 380px; overflow: hidden; position: relative; color: #333; }
+        .header { background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%); padding: 25px; text-align: center; color: white; }
+        .cinema-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8; margin-bottom: 5px; }
+        .movie-title { font-size: 26px; font-weight: 800; margin: 5px 0; color: #ffd700; text-shadow: 0 2px 4px rgba(0,0,0,0.3); line-height: 1.2; }
+        .content { padding: 25px; }
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .label { color: #666; font-weight: 500; }
+        .value { font-weight: 800; color: #000; text-align: right; }
+        .seat-box { background: #f8f9fa; border-radius: 12px; padding: 15px; text-align: center; margin-top: 25px; border: 2px solid #e9ecef; }
+        .seat-number { font-size: 36px; font-weight: 900; color: #4e4376; letter-spacing: 1px; }
+        .seat-label { font-size: 12px; text-transform: uppercase; color: #888; margin-top: 5px; }
+        
+        .qr-section { text-align: center; margin: 20px 0; padding: 10px; background: white; }
+        .qr-image { width: 150px; height: 150px; }
+
+        .ticket-id { background: #f1f3f5; text-align: center; padding: 10px; font-family: monospace; font-size: 12px; color: #555; border-top: 1px dashed #ccc; }
+        .footer { text-align: center; font-size: 10px; color: #999; padding: 10px; background: #fff; }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <div class="cinema-label">CIM Cinema Ticket</div>
+            <div class="movie-title">Movie 1</div>
+        </div>
+
+        <div class="content">
+            <div class="info-row">
+                <span class="label">Hall / Screen</span>
+                <span class="value">Hall 1</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Customer</span>
+                <span class="value">sewfweg</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Date</span>
+                <span class="value">2025-12-14</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Time</span>
+                <span class="value">00:09</span>
+            </div>
+
+            <div class="seat-box">
+                <div class="seat-number">R10-S11</div>
+                <div class="seat-label">Assigned Seat</div>
+            </div>
+
+            <div class="qr-section">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkQAAAJEAQAAAADfmwb3AAAB/ElEQVR4nO3cbW4CMQxF0dkB+99ldzBUg0oSO6RCfCQjnfyoNCV5lSz72nlAt/1N62ejJE6yQLVgAWbqCDqnucD8ZDo0RbsjuEu5KbpR8wv4Klwj7hrvkMd6Rgd5i+tSbbs9DrdQEidZoFqwYDYzy+/LYxH5+9E/QUmcZIFqwYIlmFlIHx4fbqEkTrJAtWDBwsw8OkJqC5TESRaoFiw4CzPHXYKSOMkC1YIFyzEzCT+0ZMIjJXGSBaoFC+YzM6zQFl5775WSOMkC1YIFn2Zmfx3mzO/6fx8lcZIFqgULZjPzcNX31AJqucZzpyROskC1YMFazNz75+vPMja9YTjZUxInWaBasODLzEzns1dT9g0dGkriJAtUCxbMYWbzgfNeg7ifyuM9JXGSBaoFC2Yzs2zrDfXlfN0WKImTLFAtWLAcM5vV/1pRnvYpiZMsUC1YMJ+ZPV8mvIsamkb9NymJkyxQLVgwn5m9rwulA7fVUackTrJAtWDBAswMY3t9Krzw9P8KoCROskC1YMH3mZlM9jLUN8Y7JXGSBaoFCxZmZmgL5US9KImTLFAtWLAEM5Nw468P3XdK4iQLVAsWzGZmWOFU80K9hZI4yQLVggVLMPO1RUmcZIFqwQLM1BF0TnOB+cl0aIp2R3CXclN0o+YX8FW4Rtw13iGP9UQO8hXndOak6CodlAAAAABJRU5ErkJggg==" class="qr-image" alt="Ticket QR Code" />
+            </div>
+        </div>
+
+        <div class="ticket-id">
+            ID: TKT-17B452EC
+        </div>
+
+        <div class="footer">
+            Printed: 2025-12-14 00:09:29
+        </div>
+    </div>
+</body>
+</html>

@@ -148,7 +148,7 @@ module AdminView =
                                 StackPanel.children [
                                     for s in sessions.Current do
                                         yield Border.create [
-                                            Border.background Brushes.White; Border.padding 10.0; Border.cornerRadius 5.0; Border.borderBrush Brushes.Gray; Border.borderThickness 1.0
+                                            Border.background Brushes.Black; Border.padding 10.0; Border.cornerRadius 5.0; Border.borderBrush Brushes.Gray; Border.borderThickness 1.0
                                             Border.child (
                                                 DockPanel.create [
                                                     DockPanel.children [
