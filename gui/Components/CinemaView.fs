@@ -65,8 +65,7 @@ module CinemaView =
                 match BookingHelpers.validateBookingInput uiState.SelectedSeat.Current uiState.CustomerName.Current with
                 | Result.Ok request ->
                     match CinemaService.bookSeat cinema.Current request with
-                    | SuccessWithTicket(msg, ticketInfo) -> handleSuccessfulBooking msg ticketInfo
-                    | Success msg -> handleSimpleSuccess msg
+                    | Success(msg, ticketInfo) -> handleSuccessfulBooking msg ticketInfo
                     | SeatAlreadyBooked -> UIHelpers.updateStatusMessage uiState "Seat is already booked"
                     | InvalidSeat -> UIHelpers.updateStatusMessage uiState "Invalid seat selection"
                     | Error msg -> UIHelpers.updateStatusMessage uiState $"Error: {msg}"
