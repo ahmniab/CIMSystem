@@ -1,0 +1,13 @@
+[
+  {
+    "TicketId": "TKT-39B4049E",
+    "CustomerName": "Ahmed",
+    "HallId": "session-1-639012223138161522",
+    "HallName": "Hall 1",
+    "MovieTitle": "Movie 1",
+    "SeatRow": 2,
+    "SeatColumn": 2,
+    "BookingDate": "2025-12-13T11:32:24.5835145+02:00",
+    "IsRedeemed": false
+  }
+]

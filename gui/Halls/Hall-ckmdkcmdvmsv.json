@@ -1,0 +1,12 @@
+{
+  "Id": "ckmdkcmdvmsv",
+  "Name": "Hall 1",
+  "Movies": [
+    {
+      "Name": "Movie 1",
+      "From": null,
+      "To": null,
+      "Books": null
+    }
+  ]
+}
