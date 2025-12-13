@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket - aref</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e5ec;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .ticket {
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: white;
+            width: 100%;
+            max-width: 380px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .header {
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px dashed rgba(255,255,255,0.3);
+        }
+
+        .cinema-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+
+        .movie-title {
+            font-size: 24px;
+            font-weight: 800;
+            margin-top: 10px;
+            color: #ffd700; /* لون ذهبي للفيلم */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .hall-name {
+            font-size: 14px;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #a8c0ff;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .label { opacity: 0.7; }
+        .value { font-weight: bold; }
+
+        .seat-box {
+            background: rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .seat-number {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .seat-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            opacity: 0.6;
+            padding-bottom: 20px;
+        }
+        
+        .ticket-id {
+            text-align: center;
+            font-family: monospace;
+            background: rgba(0,0,0,0.4);
+            padding: 8px;
+            margin: 0 20px 20px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <div class="cinema-label">CIM Cinema Presents</div>
+            <div class="movie-title">aref</div>
+            <div class="hall-name">session-1-639011746929477736</div>
+        </div>
+
+        <div class="content">
+            <div class="info-row">
+                <span class="label">Customer</span>
+                <span class="value">صيضص</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Date</span>
+                <span class="value">2025-12-12</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Time</span>
+                <span class="value">22:25</span>
+            </div>
+
+            <div class="seat-box">
+                <div class="seat-number">R07-S17</div>
+                <div class="seat-label">Seat Number</div>
+            </div>
+        </div>
+
+        <div class="ticket-id">
+            TICKET ID: TKT-2C84308B
+        </div>
+
+        <div class="footer">
+            Generated: 2025-12-12 22:25:39
+        </div>
+    </div>
+</body>
+</html>
