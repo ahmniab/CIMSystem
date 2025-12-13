@@ -45,7 +45,6 @@ module HtmlTicketGenerator =
         .seat-number { font-size: 36px; font-weight: 900; color: #4e4376; letter-spacing: 1px; }
         .seat-label { font-size: 12px; text-transform: uppercase; color: #888; margin-top: 5px; }
         
-        /* تنسيق الـ QR */
         .qr-section { text-align: center; margin: 20px 0; padding: 10px; background: white; }
         .qr-image { width: 150px; height: 150px; }
 
