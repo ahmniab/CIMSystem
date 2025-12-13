@@ -118,16 +118,6 @@ module CinemaServiceTests =
         request.CustomerName |> should equal "Jane Smith"
 
     [<Fact>]
-    let ``BookingResult Success should return message`` () =
-        // Act
-        let result = Success "Booking successful!"
-
-        // Assert
-        match result with
-        | Success msg -> msg |> should equal "Booking successful!"
-        | _ -> failwith "Expected Success"
-
-    [<Fact>]
     let ``BookingResult SuccessWithTicket should contain message and ticket`` () =
         // Arrange
         let ticketInfo =
@@ -141,14 +131,14 @@ module CinemaServiceTests =
               BookingDate = DateTime.Now }
 
         // Act
-        let result = SuccessWithTicket("Booked!", ticketInfo)
+        let result = Success("Booked!", ticketInfo)
 
         // Assert
         match result with
-        | SuccessWithTicket(msg, info) ->
+        | Success(msg, info) ->
             msg |> should equal "Booked!"
             info.TicketId |> should equal "TKT-123"
-        | _ -> failwith "Expected SuccessWithTicket"
+        | _ -> failwith "Expected Success"
 
     [<Fact>]
     let ``BookingResult SeatAlreadyBooked should be distinct case`` () =
