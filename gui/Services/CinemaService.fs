@@ -54,7 +54,6 @@ module CinemaService =
         | Result.Ok halls -> halls
         | Result.Error _ -> []
     
-    let getAllHalls = getAllSessions 
 
     let getHallById (hallId: string) =
         getAllSessions() |> List.tryFind (fun h -> h.Id = hallId)

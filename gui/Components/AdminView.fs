@@ -14,7 +14,7 @@ module AdminView =
     let view (onGoToMovies: unit -> unit) (onGoToHalls: unit -> unit) =
         Component(fun ctx ->
             // --- State ---
-            let sessions = ctx.useState (CinemaService.getAllHalls())
+            let sessions = ctx.useState (CinemaService.getAllSessions())
             let movies = ctx.useState (CinemaService.getAllMovies())
             let physicalHalls = ctx.useState (CinemaService.getAllPhysicalHalls())
             
@@ -27,7 +27,7 @@ module AdminView =
             let statusMsg = ctx.useState ""
 
             let refreshData () =
-                sessions.Set (CinemaService.getAllHalls())
+                sessions.Set (CinemaService.getAllSessions())
                 movies.Set (CinemaService.getAllMovies())
                 physicalHalls.Set (CinemaService.getAllPhysicalHalls())
 
