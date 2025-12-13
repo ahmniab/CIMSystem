@@ -107,10 +107,6 @@ module CinemaService =
     // ==========================================
     // 6. BOOKING LOGIC 
     // ==========================================
-
-    let private updateHallInDb (updatedHall: CinemaHall) =
-        DB.updateSession updatedHall
-
     let private isValidSeat (hall: CinemaHall) row col =
         row >= 1 && row <= hall.Height && col >= 1 && col <= hall.Width
 
@@ -133,7 +129,7 @@ module CinemaService =
 
                 hall.Seats.[rowIndex, colIndex] <- updatedSeat
 
-                match updateHallInDb hall with
+                match DB.updateSession hall with
                 | Result.Ok() ->
                     let ticketResult =
                         TicketService.createTicket
@@ -173,10 +169,10 @@ module CinemaService =
 
                 hall.Seats.[r, c] <- updatedSeat
 
-                match updateHallInDb hall with
+                match DB.updateSession hall with
                 | Result.Ok() -> Result.Ok "Seat cleared successfully"
                 | Result.Error msg -> Result.Error msg
-            | _ -> Result.Error "Seat is not currently booked"
+            | _ -> Result.Error "Sat is not currently booked"
 
     // ==========================================
     // 7. STATISTICS
@@ -190,4 +186,4 @@ module CinemaService =
                     count <- count + 1
         count
 
-    let getTotalSeatsCount (hall: CinemaHall) = hall.Width * hall.Height
+    let getTotalSeatsCount (hall: CinemaHall) = hall.eWidth * hall.Height
