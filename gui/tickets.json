@@ -1,0 +1,200 @@
+[
+  {
+    "TicketId": "TKT-EE25F984",
+    "CustomerName": "hhh",
+    "HallId": "session-1-639011746929477736",
+    "HallName": "hall 1",
+    "MovieTitle": "aref",
+    "SeatRow": 7,
+    "SeatColumn": 10,
+    "BookingDate": "2025-12-12T23:38:51.5410623+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-AE1498AE",
+    "CustomerName": "fefe",
+    "HallId": "session-1-639011746929477736",
+    "HallName": "hall 1",
+    "MovieTitle": "aref",
+    "SeatRow": 3,
+    "SeatColumn": 16,
+    "BookingDate": "2025-12-12T22:57:19.2123336+02:00",
+    "IsRedeemed": true
+  },
+  {
+    "TicketId": "TKT-194457B",
+    "CustomerName": "uigutf",
+    "HallId": "session-1-639011746929477736",
+    "HallName": "hall 1",
+    "MovieTitle": "aref",
+    "SeatRow": 6,
+    "SeatColumn": 15,
+    "BookingDate": "2025-12-12T22:43:25.8846071+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-15723F72",
+    "CustomerName": "gegewgweg",
+    "HallId": "session-1-639011746929477736",
+    "HallName": "hall 1",
+    "MovieTitle": "aref",
+    "SeatRow": 6,
+    "SeatColumn": 12,
+    "BookingDate": "2025-12-12T22:39:12.0904663+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-6CFC66",
+    "CustomerName": "\u0636\u0635\u0628\u0636\u0635\u0628",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 8,
+    "SeatColumn": 13,
+    "BookingDate": "2025-12-12T22:28:56.1585408+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-2C84308B",
+    "CustomerName": "\u0635\u064A\u0636\u0635",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 7,
+    "SeatColumn": 17,
+    "BookingDate": "2025-12-12T22:25:39.7146987+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-8AB2E2E0",
+    "CustomerName": "fwafwa",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 5,
+    "SeatColumn": 12,
+    "BookingDate": "2025-12-12T22:22:26.4319235+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-F7713445",
+    "CustomerName": "\u0635\u0628\u0635\u0634",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 6,
+    "SeatColumn": 17,
+    "BookingDate": "2025-12-12T22:21:05.9033699+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-E5A19843",
+    "CustomerName": "dqwdqw",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 6,
+    "SeatColumn": 16,
+    "BookingDate": "2025-12-12T22:18:41.5079041+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-1072B629",
+    "CustomerName": "adw",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 5,
+    "SeatColumn": 16,
+    "BookingDate": "2025-12-12T22:18:36.0449078+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-E38F4D8E",
+    "CustomerName": "masoud",
+    "HallId": "session-1-639011746929477736",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 6,
+    "SeatColumn": 11,
+    "BookingDate": "2025-12-12T22:18:28.9121356+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-E054DBBD",
+    "CustomerName": "ahmed",
+    "HallId": "session-1-639011741950639293",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 5,
+    "SeatColumn": 13,
+    "BookingDate": "2025-12-12T22:10:17.6423803+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-5457972A",
+    "CustomerName": "igkub",
+    "HallId": "session-3-639011735460273316",
+    "HallName": null,
+    "MovieTitle": "haref",
+    "SeatRow": 7,
+    "SeatColumn": 5,
+    "BookingDate": "2025-12-12T22:04:53.1279637+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-A26A6CDE",
+    "CustomerName": "gujyg",
+    "HallId": "session-3-639011735460273316",
+    "HallName": null,
+    "MovieTitle": "haref",
+    "SeatRow": 6,
+    "SeatColumn": 5,
+    "BookingDate": "2025-12-12T22:04:43.2672545+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-779F33D",
+    "CustomerName": "jpoj",
+    "HallId": "session-2-639011735722149219",
+    "HallName": null,
+    "MovieTitle": "haref",
+    "SeatRow": 7,
+    "SeatColumn": 10,
+    "BookingDate": "2025-12-12T22:01:47.0651156+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-D04F6520",
+    "CustomerName": "fewfew",
+    "HallId": "session-2-639011735722149219",
+    "HallName": null,
+    "MovieTitle": "haref",
+    "SeatRow": 5,
+    "SeatColumn": 4,
+    "BookingDate": "2025-12-12T22:01:29.5346132+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-D75668BD",
+    "CustomerName": "ahmed",
+    "HallId": "hall-1",
+    "HallName": null,
+    "MovieTitle": "Dune: Part Two",
+    "SeatRow": 9,
+    "SeatColumn": 11,
+    "BookingDate": "2025-12-12T21:21:54.2015348+02:00",
+    "IsRedeemed": false
+  },
+  {
+    "TicketId": "TKT-48DA808D",
+    "CustomerName": "ahmed",
+    "HallId": "hall-3-639011712559882199",
+    "HallName": null,
+    "MovieTitle": "aref",
+    "SeatRow": 6,
+    "SeatColumn": 7,
+    "BookingDate": "2025-12-12T21:21:07.5838781+02:00",
+    "IsRedeemed": false
+  }
+]
