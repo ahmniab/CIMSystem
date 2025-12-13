@@ -1,30 +1,26 @@
 namespace CIMSystemGUI.Helpers
 
-open System
 open CIMSystemGUI.Models
 open CIMSystemGUI.Services
 
 module BookingHelpers =
 
+    // Helper to get status message for a seat
+    let getSeatStatusMessage (seat: Seat) row col =
+        match seat.Status with
+        | SeatStatus.Available -> $"Seat {row}-{col} is available"
+        | SeatStatus.Booked -> 
+            match seat.BookedBy with
+            | Some name -> $"Seat {row}-{col} booked by {name}"
+            | None -> $"Seat {row}-{col} is booked"
+        | _ -> $"Seat {row}-{col} status unknown"
+
+    // Validate input before booking
     let validateBookingInput (selectedSeat: (int * int) option) (customerName: string) =
         match selectedSeat with
-        | Some(row, col) when not (String.IsNullOrWhiteSpace(customerName)) ->
-            Result.Ok
-                { Row = row
-                  Column = col
-                  CustomerName = customerName.Trim() }
         | None -> Result.Error "Please select a seat first"
-        | Some _ -> Result.Error "Please enter customer name"
-
-    let reloadCinemaData () =
-        match CinemaService.loadCinemaData () with
-        | Result.Ok c -> Some c
-        | Result.Error _ -> None
-
-    let getSeatStatusMessage (seat: Seat) (row: int) (col: int) =
-        match seat.Status with
-        | SeatStatus.Available -> $"Selected seat {row}-{col} (Available)"
-        | SeatStatus.Booked ->
-            let bookedBy = seat.BookedBy |> Option.defaultValue "Unknown"
-            $"Selected seat {row}-{col} (Booked by {bookedBy})"
-        | _ -> "Invalid seat"
+        | Some(row, col) ->
+            if System.String.IsNullOrWhiteSpace(customerName) then
+                Result.Error "Please enter customer name"
+            else
+                Result.Ok { Row = row; Column = col; CustomerName = customerName }
