@@ -1,23 +1,10 @@
 namespace CIMSystemGUI.Services
 
 open System
-open System.IO
-open System.Text.Json
 open CIMSystemGUI.Models
+open CIMSystemGUI.Data
 
 module TicketService =
-
-    let private ticketsFilePath = "tickets.json"
-
-    // Serializable ticket for storage
-    [<CLIMutable>]
-    type SerializableTicket =
-        { TicketId: string
-          CustomerName: string
-          SeatRow: int
-          SeatColumn: int
-          BookingDate: DateTime
-          IsRedeemed: bool }
 
     // Generate simple ticket ID based on ticket data
     let private generateTicketId (customerName: string) (seatInfo: string) (bookingTime: DateTime) =
@@ -25,67 +12,46 @@ module TicketService =
         let data = $"{customerName}:{seatInfo}:{formattedTime}"
         let hash = data.GetHashCode().ToString("X")
         $"TKT-{hash}"
-
-    // Load tickets from file
-    let loadTickets () =
+    
+    // Create a new ticket - UPDATED signature
+    let createTicket (customerName: string) (hallId: string) (hallName: string) (movieTitle: string) (seatRow: int) (seatColumn: int) (bookingDate: DateTime) =
         try
-            if File.Exists(ticketsFilePath) then
-                let json = File.ReadAllText(ticketsFilePath)
-                let tickets = JsonSerializer.Deserialize<SerializableTicket list>(json)
-                Result.Ok tickets
-            else
-                Result.Ok []
-        with ex ->
-            Result.Error $"Failed to load tickets: {ex.Message}"
-
-    // Save tickets to file
-    let private saveTickets (tickets: SerializableTicket list) =
-        try
-            let options = JsonSerializerOptions()
-            options.WriteIndented <- true
-            let json = JsonSerializer.Serialize(tickets, options)
-            File.WriteAllText(ticketsFilePath, json)
-            Result.Ok()
-        with ex ->
-            Result.Error $"Failed to save tickets: {ex.Message}"
-
-    // Create a new ticket
-    let createTicket (customerName: string) (seatRow: int) (seatColumn: int) (bookingDate: DateTime) =
-        try
-            let seatInfo = $"Row {seatRow}, Seat {seatColumn}"
+            let seatInfo = $"Hall {hallName} R{seatRow} S{seatColumn}"
             let ticketId = generateTicketId customerName seatInfo bookingDate
 
-            let ticket =
+            let ticket : DB.SerializableTicket =
                 { TicketId = ticketId
                   CustomerName = customerName
+                  HallId = hallId
+                  HallName = hallName
+                  MovieTitle = movieTitle
                   SeatRow = seatRow
                   SeatColumn = seatColumn
                   BookingDate = bookingDate
                   IsRedeemed = false }
 
-            match loadTickets () with
+            match DB.loadTickets() with
             | Result.Ok existingTickets ->
                 let updatedTickets = ticket :: existingTickets
-
-                match saveTickets updatedTickets with
+                match DB.saveTickets updatedTickets with
                 | Result.Ok() ->
                     let ticketInfo =
                         { CustomerName = customerName
+                          HallId = hallId
+                          HallName = hallName
+                          MovieTitle = movieTitle
                           SeatRow = seatRow
                           SeatColumn = seatColumn
                           BookingDate = bookingDate
                           TicketId = ticketId }
-
                     TicketCreated ticketInfo
                 | Result.Error msg -> TicketError msg
             | Result.Error msg -> TicketError msg
-        with ex ->
-            TicketError $"Failed to create ticket: {ex.Message}"
-
-    // Validate ticket by ID
+        with ex -> TicketError ex.Message
+    // Validate ticket by ID - UPDATED to return full info
     let validateTicket (ticketId: string) =
         try
-            match loadTickets () with
+            match DB.loadTickets() with
             | Result.Ok tickets ->
                 match tickets |> List.tryFind (fun t -> t.TicketId = ticketId) with
                 | Some ticket ->
@@ -94,6 +60,9 @@ module TicketService =
                     else
                         let ticketInfo =
                             { CustomerName = ticket.CustomerName
+                              HallId = ticket.HallId
+                              HallName = ticket.HallName
+                              MovieTitle = ticket.MovieTitle
                               SeatRow = ticket.SeatRow
                               SeatColumn = ticket.SeatColumn
                               BookingDate = ticket.BookingDate
@@ -105,10 +74,10 @@ module TicketService =
         with ex ->
             ValidationError $"Failed to validate ticket: {ex.Message}"
 
-    // Redeem ticket and clear booking
+    // Redeem ticket - UPDATED
     let redeemTicket (ticketId: string) =
         try
-            match loadTickets () with
+            match DB.loadTickets() with
             | Result.Ok tickets ->
                 match tickets |> List.tryFind (fun t -> t.TicketId = ticketId) with
                 | Some ticket ->
@@ -124,10 +93,13 @@ module TicketService =
                                 else
                                     t)
 
-                        match saveTickets updatedTickets with
+                        match DB.saveTickets updatedTickets with
                         | Result.Ok() ->
                             let ticketInfo =
                                 { CustomerName = ticket.CustomerName
+                                  HallId = ticket.HallId
+                                  HallName = ticket.HallName
+                                  MovieTitle = ticket.MovieTitle
                                   SeatRow = ticket.SeatRow
                                   SeatColumn = ticket.SeatColumn
                                   BookingDate = ticket.BookingDate
@@ -140,15 +112,18 @@ module TicketService =
         with ex ->
             TicketError $"Failed to redeem ticket: {ex.Message}"
 
-    // Get ticket by ID without redeeming
+    // Get ticket info - UPDATED
     let getTicketInfo (ticketId: string) =
         try
-            match loadTickets () with
+            match DB.loadTickets() with
             | Result.Ok tickets ->
                 match tickets |> List.tryFind (fun t -> t.TicketId = ticketId) with
                 | Some ticket ->
                     let ticketInfo =
                         { CustomerName = ticket.CustomerName
+                          HallId = ticket.HallId
+                          HallName = ticket.HallName
+                          MovieTitle = ticket.MovieTitle
                           SeatRow = ticket.SeatRow
                           SeatColumn = ticket.SeatColumn
                           BookingDate = ticket.BookingDate

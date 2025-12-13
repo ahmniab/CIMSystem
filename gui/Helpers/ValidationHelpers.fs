@@ -30,7 +30,9 @@ module ValidationHelpers =
 
     let formatTicketDetails (ticketInfo: TicketInfo) =
         sprintf
-            "Customer: %s\nSeat: Row %d, Column %d\nBooked: %s\nTicket ID: %s"
+            "Movie: %s\nHall: %s\nCustomer: %s\nSeat: Row %d, Column %d\nBooked: %s\nTicket ID: %s"
+            ticketInfo.MovieTitle  // Added Movie Title
+            ticketInfo.HallId      // Added Hall ID
             ticketInfo.CustomerName
             ticketInfo.SeatRow
             ticketInfo.SeatColumn
@@ -42,14 +44,19 @@ module ValidationHelpers =
         | Some info when state.IsValid -> $"{state.Message}\n{formatTicketDetails info}"
         | _ -> state.Message
 
+    // UPDATED: Finds the specific hall by ID to clear the seat
     let redeemTicketWithSeatClearing (ticketId: string) =
         match TicketService.redeemTicket ticketId with
         | TicketRedeemed ticketInfo ->
-            match CinemaService.loadCinemaData () with
-            | Result.Ok cinema ->
-                match CinemaService.clearBooking cinema ticketInfo.SeatRow ticketInfo.SeatColumn with
-                | Result.Ok msg -> Result.Ok $"🎬 TICKET REDEEMED\n{msg}\nCustomer can enter the cinema!"
+            // 1. Find the correct hall using the ID on the ticket
+            match CinemaService.getHallById ticketInfo.HallId with
+            | Some hall ->
+                // 2. Clear the booking in that specific hall
+                match CinemaService.clearBooking hall ticketInfo.SeatRow ticketInfo.SeatColumn with
+                | Result.Ok msg -> Result.Ok $"🎬 TICKET REDEEMED\n{msg}\nCustomer can enter {hall.MovieTitle}!"
                 | Result.Error msg -> Result.Ok $"⚠️ Ticket redeemed but seat clearing failed: {msg}"
-            | Result.Error msg -> Result.Ok $"⚠️ Ticket redeemed but cinema data error: {msg}"
+            
+            | None -> Result.Ok $"⚠️ Ticket redeemed, but Hall '{ticketInfo.HallId}' was not found to clear seat."
+            
         | TicketError msg -> Result.Error $"❌ ERROR: {msg}"
         | _ -> Result.Error "❌ FAILED"
