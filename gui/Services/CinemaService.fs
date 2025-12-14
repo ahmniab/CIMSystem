@@ -25,7 +25,6 @@ module CinemaService =
     let deletePhysicalHall (id: string) =
         let halls = getAllPhysicalHalls() |> List.filter (fun h -> h.Id <> id)
         DB.savePhysicalHalls halls
-
     // ==========================================
     // 4. MOVIE MANAGEMENT 
     // ==========================================
