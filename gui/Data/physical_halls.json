@@ -10,5 +10,71 @@
     "Name": "csafas",
     "Width": 10,
     "Height": 10
+  },
+  {
+    "Id": "79394643-fb86-46a9-a544-f112e946d3ba",
+    "Name": "AUTO_HALL_1c59",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "c29f8f11-aa68-47f8-a1ee-d1d6b9833a1f",
+    "Name": "AUTO_HALL_bea4",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "4896f90f-6406-4525-baab-059c6e553053",
+    "Name": "AUTO_HALL_e10c",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "5f3b07f4-b9c8-451f-890c-82da19422c5c",
+    "Name": "AUTO_HALL_0b5b",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "4e8c670a-8d29-46f1-98cc-d9305bc7b4fd",
+    "Name": "AUTO_HALL_ce16",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "bbd41a53-546b-4bcd-a450-07f5e275873b",
+    "Name": "AUTO_HALL_84a1",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "c5377f1e-bfd2-49aa-b1dd-f07c81f48e13",
+    "Name": "AUTO_HALL_a0d3",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "58f863fb-a03b-498b-8717-4c8daf764bf5",
+    "Name": "AUTO_HALL_3b40",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "9b9cf53e-a588-48df-808d-1ab065b94f8c",
+    "Name": "AUTO_HALL_6dac",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "cb09e3cf-3ba2-4824-9d18-3b53b80cca73",
+    "Name": "AUTO_HALL_c0fd",
+    "Width": 10,
+    "Height": 8
+  },
+  {
+    "Id": "3d653b27-a90e-4a96-a54c-26e69c1d598d",
+    "Name": "AUTO_HALL_94b6",
+    "Width": 10,
+    "Height": 8
   }
 ]

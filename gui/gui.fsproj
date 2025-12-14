@@ -18,6 +18,7 @@
     <Compile Include="Services/TicketService.fs" />
     <Compile Include="Services/HtmlTicketGenerator.fs" />
     <Compile Include="Services/CinemaService.fs" />
+    <Compile Include="Services/AutomationService.fs" />
     
     <Compile Include="Helpers/BookingHelpers.fs" />
     <Compile Include="Helpers/TicketHelpers.fs" />
@@ -29,7 +30,8 @@
     <Compile Include="Components/MovieSelectionView.fs" />
     <Compile Include="Components/ManageMoviesView.fs" />
     <Compile Include="Components/ManageHallsView.fs" />    
-    <Compile Include="Components/AdminView.fs" />    
+    <Compile Include="Components/AdminView.fs" />
+    <Compile Include="Components/AutomationTestingView.fs" />    
     
     <Compile Include="Components/CinemaView.fs" />
     <Compile Include="Components/MainView.fs" />

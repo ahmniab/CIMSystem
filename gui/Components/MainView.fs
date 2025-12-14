@@ -13,7 +13,6 @@ open CIMSystemGUI.Services
 open Avalonia.Styling
 open Avalonia.Media
 
-
 module MainView =
 
     type ViewState =
@@ -24,6 +23,7 @@ module MainView =
         | AdminDashboard
         | ManageMovies
         | ManageHalls
+        | AutomationTesting // Added new state here
 
     // دالة مساعدة لتحميل الصورة بأمان
     let private loadImage (path: string) =
@@ -97,6 +97,18 @@ module MainView =
                                 Button.background Brushes.DarkBlue
                                 Button.foreground Brushes.White
                                 Button.onClick (fun _ -> currentView.Set AdminDashboard) 
+                            ]
+                            
+                            Button.create [ 
+                                Button.content "☑ Automation Testing" 
+                                Button.fontSize 18.0
+                                Button.width 250.0
+                                Button.horizontalAlignment HorizontalAlignment.Center
+                                Button.horizontalContentAlignment HorizontalAlignment.Center
+                                Button.padding (10.0, 15.0)
+                                Button.background Brushes.DarkBlue
+                                Button.foreground Brushes.White
+                                Button.onClick (fun _ -> currentView.Set AutomationTesting) // Corrected to use the Union Case
                             ]
                         ]
                     ] :> Types.IView
@@ -181,6 +193,22 @@ module MainView =
                             ]
                             ContentControl.create [
                                 ContentControl.content (ManageHallsView.view())
+                            ]
+                        ]
+                    ] :> Types.IView
+
+                | AutomationTesting ->
+                    DockPanel.create [
+                        DockPanel.children [
+                            Button.create [
+                                Button.dock Dock.Top
+                                Button.content "← Back to Main Menu"
+                                Button.margin 10.0
+                                Button.background Brushes.DarkBlue
+                                Button.onClick (fun _ -> currentView.Set Dashboard)
+                            ]
+                            ContentControl.create [
+                                ContentControl.content (AutomationTestingView.view())
                             ]
                         ]
                     ] :> Types.IView

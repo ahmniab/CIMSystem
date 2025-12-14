@@ -2342,6 +2342,6309 @@
           "BookingTime": null
         }
       ]
+    },
+    {
+      "Id": "session-3-639012796142431361",
+      "PhysicalHallId": "79394643-fb86-46a9-a544-f112e946d3ba",
+      "Name": "AUTO_HALL_1c59",
+      "MovieId": "71f10f79-a7fe-4454-bb7d-b98d58d01c41",
+      "MovieTitle": "AUTO_MOVIE_7fa3",
+      "StartTime": "2025-12-15T03:26:54.2370763+02:00",
+      "EndTime": "2025-12-15T05:26:54.2370763+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:26:55.7194023+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 1,
+          "BookedBy": "EWTEW",
+          "BookingTime": "2025-12-14T03:44:35.1123806+02:00"
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 1,
+          "BookedBy": "TEST",
+          "BookingTime": "2025-12-14T03:44:27.5207866+02:00"
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-4-639012799722409471",
+      "PhysicalHallId": "c29f8f11-aa68-47f8-a1ee-d1d6b9833a1f",
+      "Name": "AUTO_HALL_bea4",
+      "MovieId": "6f25418d-1a0d-4ea7-90f7-3a125dfc7d98",
+      "MovieTitle": "AUTO_MOVIE_a2f4",
+      "StartTime": "2025-12-15T03:32:52.2289678+02:00",
+      "EndTime": "2025-12-15T05:32:52.2289678+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:32:53.0855582+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-5-639012800683329311",
+      "PhysicalHallId": "4896f90f-6406-4525-baab-059c6e553053",
+      "Name": "AUTO_HALL_e10c",
+      "MovieId": "b6aa26d0-bc12-44c6-a183-d36af556eb90",
+      "MovieTitle": "AUTO_MOVIE_1367",
+      "StartTime": "2025-12-15T03:34:28.3262739+02:00",
+      "EndTime": "2025-12-15T05:34:28.3262739+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:34:29.1638598+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-6-639012800904360130",
+      "PhysicalHallId": "5f3b07f4-b9c8-451f-890c-82da19422c5c",
+      "Name": "AUTO_HALL_0b5b",
+      "MovieId": "991f802d-a7ef-467a-ab8b-596de81ef652",
+      "MovieTitle": "AUTO_MOVIE_4efd",
+      "StartTime": "2025-12-15T03:34:50.4346756+02:00",
+      "EndTime": "2025-12-15T05:34:50.4346756+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:34:51.2707666+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-7-639012802357670443",
+      "PhysicalHallId": "4e8c670a-8d29-46f1-98cc-d9305bc7b4fd",
+      "Name": "AUTO_HALL_ce16",
+      "MovieId": "3083ed54-8506-4e50-b1f6-93457e925daf",
+      "MovieTitle": "AUTO_MOVIE_6e28",
+      "StartTime": "2025-12-15T03:37:15.7518564+02:00",
+      "EndTime": "2025-12-15T05:37:15.7518564+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:37:16.612703+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-8-639012803138372816",
+      "PhysicalHallId": "bbd41a53-546b-4bcd-a450-07f5e275873b",
+      "Name": "AUTO_HALL_84a1",
+      "MovieId": "6ef970c3-93db-492b-b7dd-11091ee357be",
+      "MovieTitle": "AUTO_MOVIE_c532",
+      "StartTime": "2025-12-15T03:38:33.8284832+02:00",
+      "EndTime": "2025-12-15T05:38:33.8284832+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:38:34.6834824+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-9-639012804045443322",
+      "PhysicalHallId": "c5377f1e-bfd2-49aa-b1dd-f07c81f48e13",
+      "Name": "AUTO_HALL_a0d3",
+      "MovieId": "ed1a0c1d-35c7-4270-b6d1-31e7dbf19abd",
+      "MovieTitle": "AUTO_MOVIE_9da6",
+      "StartTime": "2025-12-15T03:40:04.5365229+02:00",
+      "EndTime": "2025-12-15T05:40:04.5365229+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:40:05.3957886+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-10-639012804467878458",
+      "PhysicalHallId": "58f863fb-a03b-498b-8717-4c8daf764bf5",
+      "Name": "AUTO_HALL_3b40",
+      "MovieId": "d2ae883c-fc7b-4834-b13f-628e5eacf4df",
+      "MovieTitle": "AUTO_MOVIE_142d",
+      "StartTime": "2025-12-15T03:40:46.7859226+02:00",
+      "EndTime": "2025-12-15T05:40:46.7859226+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:40:47.6066786+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-11-639012804907812006",
+      "PhysicalHallId": "9b9cf53e-a588-48df-808d-1ab065b94f8c",
+      "Name": "AUTO_HALL_6dac",
+      "MovieId": "827e0784-d6e8-4b1c-a324-ace6d5d5b247",
+      "MovieTitle": "AUTO_MOVIE_f3a2",
+      "StartTime": "2025-12-15T03:41:30.7716546+02:00",
+      "EndTime": "2025-12-15T05:41:30.7716546+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:41:31.629419+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-12-639012806227036189",
+      "PhysicalHallId": "cb09e3cf-3ba2-4824-9d18-3b53b80cca73",
+      "Name": "AUTO_HALL_c0fd",
+      "MovieId": "2c595be2-e745-4785-93cb-fd7210e311e1",
+      "MovieTitle": "AUTO_MOVIE_8b89",
+      "StartTime": "2025-12-15T03:43:42.6949624+02:00",
+      "EndTime": "2025-12-15T05:43:42.6949624+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:43:43.5544424+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
+    },
+    {
+      "Id": "session-13-639012806324463870",
+      "PhysicalHallId": "3d653b27-a90e-4a96-a54c-26e69c1d598d",
+      "Name": "AUTO_HALL_94b6",
+      "MovieId": "b58d3860-07bc-45f4-8d42-8f8a0d0215d2",
+      "MovieTitle": "AUTO_MOVIE_1559",
+      "StartTime": "2025-12-15T03:43:52.4425205+02:00",
+      "EndTime": "2025-12-15T05:43:52.4425205+02:00",
+      "Width": 10,
+      "Height": 8,
+      "Seats": [
+        {
+          "Row": 1,
+          "Column": 1,
+          "Status": 1,
+          "BookedBy": "AUTO_USER",
+          "BookingTime": "2025-12-14T03:43:53.2746551+02:00"
+        },
+        {
+          "Row": 1,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 1,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 2,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 3,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 4,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 5,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 6,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 7,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 1,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 2,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 3,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 4,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 5,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 6,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 7,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 8,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 9,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        },
+        {
+          "Row": 8,
+          "Column": 10,
+          "Status": 0,
+          "BookedBy": null,
+          "BookingTime": null
+        }
+      ]
     }
   ]
 }

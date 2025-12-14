@@ -124,7 +124,6 @@ module CinemaView =
                                   ) ]
 
                             // --- Content Switcher (Overlay vs Grid) ---
-                            // --- Content Switcher (Overlay vs Grid) ---
                             match ticketHtml.Current with
                             // 1. حالة وجود تذكرة (عرض النافذة المنبثقة مع الخلفية)
                             | Some _ ->
