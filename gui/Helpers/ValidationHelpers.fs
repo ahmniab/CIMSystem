@@ -48,12 +48,9 @@ module ValidationHelpers =
         match TicketService.redeemTicket ticketId with
         | TicketRedeemed ticketInfo ->
             match CinemaService.getHallById ticketInfo.HallId with
-            | Some hall ->
-                match CinemaService.clearBooking hall ticketInfo.SeatRow ticketInfo.SeatColumn with
-                | Result.Ok msg -> Result.Ok $"🎬 TICKET REDEEMED\n{msg}\nCustomer can enter {hall.MovieTitle}!"
-                | Result.Error msg -> Result.Ok $"⚠️ Ticket redeemed but seat clearing failed: {msg}"
+            | Some hall -> Result.Ok $"🎬 TICKET REDEEMED\nCustomer can enter {hall.MovieTitle}!"
             
-            | None -> Result.Ok $"⚠️ Ticket redeemed, but Hall '{ticketInfo.HallId}' was not found to clear seat."
+            | None -> Result.Ok $"⚠️ Ticket redeemed, but Hall '{ticketInfo.HallId}' was not found."
             
         | TicketError msg -> Result.Error $"❌ ERROR: {msg}"
         | _ -> Result.Error "❌ FAILED"
