@@ -7,9 +7,6 @@ open CIMSystemGUI.Data
 module CinemaService =
 
 
-    // ==========================================
-    // 3. PHYSICAL HALLS MANAGEMENT 
-    // ==========================================
 
     let getAllPhysicalHalls () : PhysicalHall list =
         match DB.loadPhysicalHalls() with
@@ -25,9 +22,6 @@ module CinemaService =
     let deletePhysicalHall (id: string) =
         let halls = getAllPhysicalHalls() |> List.filter (fun h -> h.Id <> id)
         DB.savePhysicalHalls halls
-    // ==========================================
-    // 4. MOVIE MANAGEMENT 
-    // ==========================================
 
     let getAllMovies () : Movie list =
         match DB.loadMovies() with
@@ -44,9 +38,6 @@ module CinemaService =
         let movies = getAllMovies() |> List.filter (fun m -> m.Id <> id)
         DB.saveMovies movies
 
-    // ==========================================
-    // 5. SCHEDULING & SESSIONS 
-    // ==========================================
     
     let getAllSessions () =
         match DB.loadAllSessions() with
@@ -103,9 +94,6 @@ module CinemaService =
         let all = getAllSessions() |> List.filter (fun h -> h.Id <> sessionId)
         DB.saveAllSessions all
 
-    // ==========================================
-    // 6. BOOKING LOGIC 
-    // ==========================================
 
     let private updateHallInDb (updatedHall: CinemaHall) =
         DB.updateSession updatedHall
@@ -177,9 +165,6 @@ module CinemaService =
                 | Result.Error msg -> Result.Error msg
             | _ -> Result.Error "Seat is not currently booked"
 
-    // ==========================================
-    // 7. STATISTICS
-    // ==========================================
 
     let getAvailableSeatsCount (hall: CinemaHall) =
         let mutable count = 0

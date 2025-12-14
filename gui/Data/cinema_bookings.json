@@ -497,9 +497,9 @@
         {
           "Row": 7,
           "Column": 10,
-          "Status": 0,
-          "BookedBy": null,
-          "BookingTime": null
+          "Status": 1,
+          "BookedBy": "rqwe",
+          "BookingTime": "2025-12-14T11:16:26.5390961+02:00"
         },
         {
           "Row": 8,

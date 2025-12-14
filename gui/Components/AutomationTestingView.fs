@@ -38,22 +38,16 @@ module AutomationTestingView =
                 ExpandedSteps = Set.empty
             }
 
-            // Helper to update specific step result
             let updateStepResult (updater: ProcessResult -> ViewState -> ViewState) result =
                 let s = state.Current
                 let s1 = updater result s
-                // Auto-expand if passed or failed
                 let finalState = 
                     if result.Status = Passed || (match result.Status with Failed _ -> true | _ -> false) then
                         { s1 with ExpandedSteps = s1.ExpandedSteps.Add(result.StepName) }
                     else s1
                 state.Set finalState
 
-            // =================================================================================================
-            // SEQUENTIAL EXECUTION LOGIC
-            // =================================================================================================
             let runFullSequence () =
-                // 1. Reset State
                 state.Set { state.Current with 
                                 IsSequenceRunning = true
                                 ExpandedSteps = Set.empty
@@ -69,29 +63,21 @@ module AutomationTestingView =
                        async {
                            if not previousSuccess then return false
                            else
-                               // Set to Running
-                               // We construct a dummy result just to identify which step we are updating
-                               // then we force status to Running
                                let currentRes = emptyResult "" 
                                let runningRes = { currentRes with Status = Running }
                                
-                               // Calculate new state
                                let runningState = updater runningRes state.Current
                                state.Set runningState
                                
                                do! Async.Sleep 300
 
-                               // Run Task
                                let! result = task()
                                
-                               // Update Final Result
                                updateStepResult updater result
                                do! Async.Sleep 500
                                return result.Status = Passed
                        }
 
-                   // 2. Chain Execution
-                   // Note: We use simple lambdas to identify which field to update
                    let! s1 = runStepTask AutomationService.testDatabase (fun r s -> { s with DbCheck = if r.Status = Running then { s.DbCheck with Status = Running } else r }) true
                    let! s2 = runStepTask AutomationService.createHall (fun r s -> { s with CreateHall = if r.Status = Running then { s.CreateHall with Status = Running } else r }) s1
                    let! s3 = runStepTask AutomationService.createMovie (fun r s -> { s with CreateMovie = if r.Status = Running then { s.CreateMovie with Status = Running } else r }) s2
@@ -99,14 +85,10 @@ module AutomationTestingView =
                    let! s5 = runStepTask AutomationService.bookSeat (fun r s -> { s with Booking = if r.Status = Running then { s.Booking with Status = Running } else r }) s4
                    let! _  = runStepTask AutomationService.validateTicket (fun r s -> { s with Validation = if r.Status = Running then { s.Validation with Status = Running } else r }) s5
 
-                   // 3. Finish
                    state.Set { state.Current with IsSequenceRunning = false }
 
                 } |> Async.StartImmediate
 
-            // =================================================================================================
-            // RENDERING HELPERS
-            // =================================================================================================
             
             let renderDataTable title (data: Map<string, string>) (headerColor: string) (bgColor: string) =
                 Border.create [
@@ -168,14 +150,12 @@ module AutomationTestingView =
                 StackPanel.create [
                    StackPanel.margin (20.0, 0.0)
                    StackPanel.children [
-                       // 1. Process Box
                        Border.create [
                            Border.cornerRadius 8.0
                            Border.borderThickness 2.0
                            Border.borderBrush borderColor
                            Border.background Brushes.Black
                            Border.padding 10.0
-                           // Removed BoxShadow to prevent type errors (it is cosmetic)
                            Border.child (
                                DockPanel.create [
                                    DockPanel.children [
@@ -195,7 +175,6 @@ module AutomationTestingView =
                            )
                        ]
 
-                       // 2. Details (Inputs/Outputs)
                        Expander.create [
                            Expander.horizontalAlignment HorizontalAlignment.Stretch
                            Expander.isExpanded (state.Current.ExpandedSteps.Contains(result.StepName))
@@ -207,12 +186,10 @@ module AutomationTestingView =
                                StackPanel.create [
                                    StackPanel.spacing 10.0
                                    StackPanel.children [
-                                        // Error Message
                                         match result.Status with
                                         | Failed msg -> TextBlock.create [ TextBlock.text $"Error: {msg}"; TextBlock.foreground Brushes.Red; TextBlock.fontWeight FontWeight.Bold; TextBlock.padding 5.0 ]
                                         | _ -> ()
 
-                                        // Data Flow Grid
                                         Grid.create [
                                             Grid.columnDefinitions "4*, 1*, 4*" 
                                             Grid.children [
@@ -224,7 +201,6 @@ module AutomationTestingView =
                                             ]
                                         ]
                                         
-                                        // Logs
                                         if not result.Details.Logs.IsEmpty then
                                              Border.create [
                                                  Border.background (SolidColorBrush(Color.Parse "#000000ff")); Border.padding 5.0; Border.cornerRadius 4.0
@@ -237,12 +213,8 @@ module AutomationTestingView =
                    ]
                 ]
 
-            // =================================================================================================
-            // MAIN LAYOUT
-            // =================================================================================================
             DockPanel.create [
                 DockPanel.children [
-                    // Header & Action Button
                     StackPanel.create [
                         DockPanel.dock Dock.Top
                         StackPanel.margin (20.0, 20.0, 20.0, 10.0)
@@ -274,7 +246,6 @@ module AutomationTestingView =
                         ]
                     ]
 
-                    // Pipeline ScrollView
                     ScrollViewer.create [
                         DockPanel.dock Dock.Bottom
                         ScrollViewer.content (

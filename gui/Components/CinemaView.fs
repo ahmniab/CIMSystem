@@ -13,16 +13,12 @@ open CIMSystemGUI.Helpers
 
 module CinemaView =
 
-    // --- Main View ---
     let view (initialHall: CinemaHall) (onBack: unit -> unit) =
         Component.create (
             "CinemaView",
             fun ctx ->
-                // 1. States
                 let cinema = ctx.useState initialHall
-                // State للتحكم في ظهور نافذة التذكرة
                 let ticketHtml = ctx.useState (None: string option)
-                // State لحفظ بيانات التذكرة الحالية لطباعتها
                 let currentTicket = ctx.useState (None: CIMSystemGUI.Models.TicketInfo option)
 
                 let uiState =
@@ -30,21 +26,17 @@ module CinemaView =
                       UIHelpers.CustomerName = ctx.useState ""
                       UIHelpers.StatusMessage = ctx.useState $"Viewing {initialHall.MovieTitle} - Click a seat" }
 
-                // 2. Helpers
                 let reloadCurrentHall () =
                     match CinemaService.getHallById cinema.Current.Id with
                     | Some updatedHall -> cinema.Set updatedHall
                     | None -> ()
 
-                // دالة النجاح: تحفظ التذكرة وتظهر النافذة المنبثقة
                 let handleSuccessfulBooking (msg: string) (ticketInfo: CIMSystemGUI.Models.TicketInfo) =
                     let successMessage = TicketHelpers.handleTicketGeneration msg ticketInfo
                     UIHelpers.updateStatusMessage uiState successMessage
 
-                    // حفظ التذكرة في الـ State
                     currentTicket.Set(Some ticketInfo)
 
-                    // تفعيل وضع "عرض التذكرة" (القيمة النصية هنا مجرد Flag)
                     ticketHtml.Set(Some "ShowTicketOverlay")
 
                     UIHelpers.clearBookingForm uiState
@@ -73,7 +65,6 @@ module CinemaView =
                         | Result.Error err -> UIHelpers.updateStatusMessage uiState $"❌ Error: {err}"
                     | None -> ()
 
-                // دالة الحجز (Logic Only)
                 let onBookSeat () =
                     match
                         BookingHelpers.validateBookingInput uiState.SelectedSeat.Current uiState.CustomerName.Current
@@ -96,12 +87,10 @@ module CinemaView =
                             None
                     | None -> None
 
-                // 3. UI Layout
                 DockPanel.create
                     [ DockPanel.children
                           [
 
-                            // --- Header ---
                             Border.create
                                 [ Border.dock Dock.Top
                                   Border.background (SolidColorBrush(Color.Parse("#2E3440")))
@@ -123,13 +112,10 @@ module CinemaView =
                                                         TextBlock.verticalAlignment VerticalAlignment.Center ] ] ]
                                   ) ]
 
-                            // --- Content Switcher (Overlay vs Grid) ---
                             match ticketHtml.Current with
-                            // 1. حالة وجود تذكرة (عرض النافذة المنبثقة مع الخلفية)
                             | Some _ ->
                                 Border.create
                                     [
-                                      // إعداد الخلفية (الصورة)
                                       Border.background (
                                           try
                                               let bitmap = new Avalonia.Media.Imaging.Bitmap("Backgrounds/mainView.jpg")
@@ -144,7 +130,6 @@ module CinemaView =
                                       Border.borderBrush Brushes.Green
                                       Border.borderThickness 2.0
 
-                                      // طبقة شفافة داخلية للنصوص
                                       Border.child (
                                           Border.create
                                               [ Border.background (SolidColorBrush(Color.Parse("#CCFFFFFF")))
@@ -169,7 +154,6 @@ module CinemaView =
                                                                       TextBlock.textAlignment TextAlignment.Center
                                                                       TextBlock.foreground Brushes.Black ]
 
-                                                                // زر الطباعة
                                                                 Button.create
                                                                     [ Button.content "🖨 Print Ticket (Open in Browser)"
                                                                       Button.padding (20.0, 10.0)
@@ -190,7 +174,6 @@ module CinemaView =
                                                                                   printfn "Print Error: %s" err
                                                                           | None -> ()) ]
 
-                                                                // زر الإغلاق
                                                                 Button.create
                                                                     [ Button.content "Close & Continue"
                                                                       Button.padding (20.0, 10.0)
@@ -204,12 +187,10 @@ module CinemaView =
                                                 ) ]
                                       ) ]
 
-                            // 2. حالة عدم وجود تذكرة (عرض الشاشة الرئيسية للكراسي) - هذا الجزء كان ناقصاً
                             | None ->
                                 DockPanel.create
                                     [ DockPanel.children
                                           [
-                                            // Status Bar
                                             Border.create
                                                 [ Border.dock Dock.Bottom
                                                   Border.background Brushes.LightGray
@@ -220,7 +201,6 @@ module CinemaView =
                                                             TextBlock.fontSize 12.0 ]
                                                   ) ]
 
-                                            // Right Control Panel
                                             StackPanel.create
                                                 [ StackPanel.dock Dock.Right
                                                   StackPanel.width 200.0
@@ -274,11 +254,6 @@ module CinemaView =
                                                              TextBlock.create [ TextBlock.text "Select a seat" ]
                                                              :> Types.IView)
 
-                                                        // Button.create
-                                                        //     [ Button.content "Clear Selection"
-                                                        //       Button.onClick (fun _ ->
-                                                        //           UIHelpers.clearSelectionWithMessage uiState)
-                                                        //       Button.isEnabled uiState.SelectedSeat.Current.IsSome ]
 
                                                         TextBlock.create
                                                             [ TextBlock.text "Statistics:"
@@ -288,7 +263,6 @@ module CinemaView =
                                                             [ TextBlock.text
                                                                   $"Available: {CinemaService.getAvailableSeatsCount cinema.Current}" ] ] ]
 
-                                            // Main Grid (Center)
                                             ScrollViewer.create
                                                 [ ScrollViewer.padding 20.0
                                                   ScrollViewer.content (

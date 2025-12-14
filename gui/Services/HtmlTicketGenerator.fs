@@ -18,23 +18,18 @@ module HtmlTicketGenerator =
         $"data:image/png;base64,{base64}"
 
     let generateTicketHtml (ticketInfo: TicketInfo) =
-        // 1. تجهيز البيانات كمتغيرات نصية أولاً لتفادي أخطاء الأقواس
         let movieTitle = ticketInfo.MovieTitle
         let hallName = ticketInfo.HallName
         let customerName = ticketInfo.CustomerName
         let bookingDate = ticketInfo.BookingDate.ToString("yyyy-MM-dd")
         let bookingTime = ticketInfo.BookingDate.ToString("HH:mm")
         let generatedTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-        // استخدام string conversion آمن هنا
         let ticketIdStr = string ticketInfo.TicketId 
         
-        // حساب رقم المقعد (تأكد أن SeatRow و SeatColumn أرقام صحيحة integer)
         let seatNumber = sprintf "R%02d-S%02d" ticketInfo.SeatRow ticketInfo.SeatColumn
         
-        // توليد الباركود
         let qrImageSrc = generateQrCodeBase64 ticketIdStr
 
-        // 2. تمرير المتغيرات الجاهزة للـ sprintf
         sprintf
             """<!DOCTYPE html>
 <html lang="en">
@@ -116,16 +111,16 @@ module HtmlTicketGenerator =
     </script>
 </body>
 </html>"""
-            movieTitle      // 1
-            movieTitle      // 2
-            hallName        // 3
-            customerName    // 4
-            bookingDate     // 5
-            bookingTime     // 6
-            seatNumber      // 7
-            qrImageSrc      // 8
-            ticketIdStr     // 9
-            generatedTime   // 10
+            movieTitle      
+            movieTitle      
+            hallName        
+            customerName    
+            bookingDate     
+            bookingTime     
+            seatNumber      
+            qrImageSrc      
+            ticketIdStr     
+            generatedTime   
 
     let saveTicketAsHtml (ticketInfo: TicketInfo) =
         try

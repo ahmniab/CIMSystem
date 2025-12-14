@@ -6,21 +6,18 @@ open CIMSystemGUI.Data
 
 module AutomationService =
 
-    // حالة العملية (نجاح/فشل)
     type StepStatus = 
         | Idle
         | Running
         | Passed
         | Failed of string
 
-    // هيكل تفصيلي لما حدث في العملية
     type StepDetail = {
         Inputs: Map<string, string>
         Outputs: Map<string, string>
         Logs: string list
     }
 
-    // النتيجة النهائية للعملية الواحدة
     type ProcessResult = {
         StepName: string
         Status: StepStatus
@@ -28,7 +25,6 @@ module AutomationService =
         Timestamp: DateTime
     }
 
-    // "الذاكرة" المشتركة بين العمليات
     type AutomationContext = {
         mutable CreatedHallId: string option
         mutable CreatedMovieId: string option
@@ -50,9 +46,6 @@ module AutomationService =
         Timestamp = DateTime.Now
     }
 
-    // =========================================================
-    // 1. اختبار قاعدة البيانات
-    // =========================================================
     let testDatabase () =
         async {
             let inputs = Map [ "Action", "Check DB Connection" ]
@@ -70,9 +63,6 @@ module AutomationService =
                          Details = { Inputs = inputs; Outputs = Map.empty; Logs = [ex.Message] } }
         }
 
-    // =========================================================
-    // 2. إنشاء قاعة
-    // =========================================================
     let createHall () =
         async {
             let name = $"AUTO_HALL_{Guid.NewGuid().ToString().Substring(0,4)}"
@@ -80,7 +70,6 @@ module AutomationService =
             let inputs = Map [ "HallName", name; "Width", string w; "Height", string h ]
             
             try
-                // Added ignore to fix warning
                 CinemaService.addPhysicalHall name w h |> ignore
                 
                 let halls = CinemaService.getAllPhysicalHalls()
@@ -98,16 +87,12 @@ module AutomationService =
                          Details = { Inputs = inputs; Outputs = Map.empty; Logs = [ex.Message] } }
         }
 
-    // =========================================================
-    // 3. إنشاء فيلم
-    // =========================================================
     let createMovie () =
         async {
             let title = $"AUTO_MOVIE_{Guid.NewGuid().ToString().Substring(0,4)}"
             let inputs = Map [ "MovieTitle", title ]
             
             try
-                // Added ignore to fix warning
                 CinemaService.addMovie title |> ignore
                 
                 let movies = CinemaService.getAllMovies()
@@ -125,9 +110,6 @@ module AutomationService =
                          Details = { Inputs = inputs; Outputs = Map.empty; Logs = [ex.Message] } }
         }
 
-    // =========================================================
-    // 4. جدولة العرض
-    // =========================================================
     let scheduleSession () =
         async {
             match sharedContext.CreatedHallId, sharedContext.CreatedMovieId with
@@ -164,9 +146,6 @@ module AutomationService =
                          Details = { Inputs = Map.empty; Outputs = Map.empty; Logs = ["Please run Create Hall & Movie first"] } }
         }
 
-    // =========================================================
-    // 5. حجز مقعد
-    // =========================================================
     let bookSeat () =
         async {
             match sharedContext.CreatedSessionId with
@@ -198,9 +177,6 @@ module AutomationService =
                          Details = { Inputs = Map.empty; Outputs = Map.empty; Logs = ["Please run Schedule Session first"] } }
         }
 
-    // =========================================================
-    // 6. التحقق
-    // =========================================================
     let validateTicket () =
         async {
             match sharedContext.CreatedTicketId with

@@ -1,5 +1,16 @@
 [
   {
+    "TicketId": "TKT-E0AEF153",
+    "CustomerName": "rqwe",
+    "HallId": "session-1-639013067835090552",
+    "HallName": "AUTO_HALL_c064",
+    "MovieTitle": "dds",
+    "SeatRow": 7,
+    "SeatColumn": 10,
+    "BookingDate": "2025-12-14T11:16:26.5390961+02:00",
+    "IsRedeemed": false
+  },
+  {
     "TicketId": "TKT-48D8C26",
     "CustomerName": "awfwf",
     "HallId": "session-1-639013067835090552",
