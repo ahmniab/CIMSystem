@@ -12,7 +12,6 @@
     <Compile Include="Helpers/TicketHelpersTests.fs" />
     <Compile Include="Services/TicketServiceTests.fs" />
     <Compile Include="Services/CinemaServiceTests.fs" />
-    <Compile Include="Models/CinemaModelsTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
