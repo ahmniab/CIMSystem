@@ -252,8 +252,8 @@ module AutomationTestingView =
                                     StackPanel.create [
                                         DockPanel.dock Dock.Left
                                         StackPanel.children [
-                                            TextBlock.create [ TextBlock.text "🔄 System Automation Pipeline"; TextBlock.fontSize 22.0; TextBlock.fontWeight FontWeight.Bold; TextBlock.foreground Brushes.DarkSlateBlue ]
-                                            TextBlock.create [ TextBlock.text "Visualizes data flow between system components sequentially."; TextBlock.fontSize 11.0; TextBlock.foreground Brushes.Gray ]
+                                            TextBlock.create [ TextBlock.text "🔄 System Automation Pipeline"; TextBlock.fontSize 22.0; TextBlock.fontWeight FontWeight.Bold; TextBlock.foreground Brushes.White ]
+                                            TextBlock.create [ TextBlock.text "Visualizes data flow between system components sequentially."; TextBlock.fontSize 11.0; TextBlock.foreground Brushes.White ]
                                         ]
                                     ]
                                     Button.create [

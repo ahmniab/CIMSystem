@@ -274,11 +274,11 @@ module CinemaView =
                                                              TextBlock.create [ TextBlock.text "Select a seat" ]
                                                              :> Types.IView)
 
-                                                        Button.create
-                                                            [ Button.content "Clear Selection"
-                                                              Button.onClick (fun _ ->
-                                                                  UIHelpers.clearSelectionWithMessage uiState)
-                                                              Button.isEnabled uiState.SelectedSeat.Current.IsSome ]
+                                                        // Button.create
+                                                        //     [ Button.content "Clear Selection"
+                                                        //       Button.onClick (fun _ ->
+                                                        //           UIHelpers.clearSelectionWithMessage uiState)
+                                                        //       Button.isEnabled uiState.SelectedSeat.Current.IsSome ]
 
                                                         TextBlock.create
                                                             [ TextBlock.text "Statistics:"

@@ -15,11 +15,11 @@ module MovieSelectionView =
                 Button.create [
                     Button.dock Dock.Top
                     Button.horizontalAlignment HorizontalAlignment.Left
-                    Button.content "← Back to Dashboard"
+                    Button.content "← Back to Main Menu"
                     Button.fontSize 16.0
                     Button.margin (20.0, 20.0, 0.0, 0.0)
-                    Button.background Brushes.Gray 
-                    Button.foreground Brushes.Black
+                    Button.background Brushes.DarkBlue 
+                    Button.foreground Brushes.White
                     Button.borderThickness 0.0
                     Button.onClick (fun _ -> onBack())
                 ]

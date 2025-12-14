@@ -186,7 +186,7 @@ module StaffValidationView =
                                 Button.width 120.0
                             ]
                             Button.create [
-                                Button.content "✅ Allow Entry"
+                                Button.content "⛔ Clear Seat"
                                 Button.onClick (fun _ -> redeemTicket())
                                 Button.background Brushes.Green
                                 Button.foreground Brushes.White

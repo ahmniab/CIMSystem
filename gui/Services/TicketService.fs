@@ -56,7 +56,7 @@ module TicketService =
                 match tickets |> List.tryFind (fun t -> t.TicketId = ticketId) with
                 | Some ticket ->
                     if ticket.IsRedeemed then
-                        InvalidTicket "Ticket has already been redeemed"
+                        InvalidTicket "Ticket has already been used"
                     else
                         let ticketInfo =
                             { CustomerName = ticket.CustomerName

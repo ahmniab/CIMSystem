@@ -1,5 +1,27 @@
 [
   {
+    "TicketId": "TKT-48D8C26",
+    "CustomerName": "awfwf",
+    "HallId": "session-1-639013067835090552",
+    "HallName": "AUTO_HALL_c064",
+    "MovieTitle": "dds",
+    "SeatRow": 4,
+    "SeatColumn": 8,
+    "BookingDate": "2025-12-14T11:03:46.8618264+02:00",
+    "IsRedeemed": true
+  },
+  {
+    "TicketId": "TKT-2571B822",
+    "CustomerName": "RE",
+    "HallId": "session-1-639013067835090552",
+    "HallName": "AUTO_HALL_c064",
+    "MovieTitle": "dds",
+    "SeatRow": 2,
+    "SeatColumn": 3,
+    "BookingDate": "2025-12-14T11:00:37.237767+02:00",
+    "IsRedeemed": false
+  },
+  {
     "TicketId": "TKT-D790A06F",
     "CustomerName": "AUTO_USER",
     "HallId": "session-10-639012815645810604",
