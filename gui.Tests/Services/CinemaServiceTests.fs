@@ -205,3 +205,159 @@ module CinemaServiceTests =
         // Assert
         complex.Halls.Length |> should equal 1
         complex.Halls.Head.Id |> should equal "CH1"
+
+    [<Fact>]
+    let ``getTotalSeatsCount should calculate correct total`` () =
+        // Arrange
+        let hall =
+            { Id = "CH1"
+              PhysicalHallId = "PH1"
+              Name = "Hall 1"
+              MovieId = "M1"
+              MovieTitle = "Test Movie"
+              StartTime = DateTime.Now
+              EndTime = DateTime.Now.AddHours(2.0)
+              Width = 10
+              Height = 8
+              Seats =
+                Array2D.create
+                    8
+                    10
+                    { Row = 1
+                      Column = 1
+                      Status = SeatStatus.Available
+                      BookedBy = None
+                      BookingTime = None } }
+
+        // Act
+        let total = CIMSystemGUI.Services.CinemaService.getTotalSeatsCount hall
+
+        // Assert
+        total |> should equal 80
+
+    [<Fact>]
+    let ``getAvailableSeatsCount should return correct count when all seats available`` () =
+        // Arrange
+        let seats =
+            Array2D.create
+                5
+                6
+                { Row = 1
+                  Column = 1
+                  Status = SeatStatus.Available
+                  BookedBy = None
+                  BookingTime = None }
+
+        let hall =
+            { Id = "CH1"
+              PhysicalHallId = "PH1"
+              Name = "Hall 1"
+              MovieId = "M1"
+              MovieTitle = "Test Movie"
+              StartTime = DateTime.Now
+              EndTime = DateTime.Now.AddHours(2.0)
+              Width = 6
+              Height = 5
+              Seats = seats }
+
+        // Act
+        let available = CIMSystemGUI.Services.CinemaService.getAvailableSeatsCount hall
+
+        // Assert
+        available |> should equal 30
+
+    [<Fact>]
+    let ``getAvailableSeatsCount should return correct count with some booked seats`` () =
+        // Arrange
+        let seats =
+            Array2D.create
+                5
+                6
+                { Row = 1
+                  Column = 1
+                  Status = SeatStatus.Available
+                  BookedBy = None
+                  BookingTime = None }
+
+        // Book 3 seats
+        seats.[0, 0] <-
+            { seats.[0, 0] with
+                Status = SeatStatus.Booked
+                BookedBy = Some "Alice" }
+
+        seats.[1, 2] <-
+            { seats.[1, 2] with
+                Status = SeatStatus.Booked
+                BookedBy = Some "Bob" }
+
+        seats.[3, 4] <-
+            { seats.[3, 4] with
+                Status = SeatStatus.Booked
+                BookedBy = Some "Charlie" }
+
+        let hall =
+            { Id = "CH1"
+              PhysicalHallId = "PH1"
+              Name = "Hall 1"
+              MovieId = "M1"
+              MovieTitle = "Test Movie"
+              StartTime = DateTime.Now
+              EndTime = DateTime.Now.AddHours(2.0)
+              Width = 6
+              Height = 5
+              Seats = seats }
+
+        // Act
+        let available = CIMSystemGUI.Services.CinemaService.getAvailableSeatsCount hall
+
+        // Assert
+        available |> should equal 27
+
+    [<Fact>]
+    let ``isHallAvailable should return true when no overlap`` () =
+        // Arrange
+        let physicalHallId = "PH1"
+        let newStart = DateTime(2025, 12, 14, 18, 0, 0)
+        let newEnd = DateTime(2025, 12, 14, 20, 0, 0)
+
+        // Act
+        let isAvailable =
+            CIMSystemGUI.Services.CinemaService.isHallAvailable physicalHallId newStart newEnd
+
+        // Assert - should be true since there are no existing sessions in test environment
+        isAvailable |> should equal true
+
+    [<Fact>]
+    let ``getHallById should return None when hall does not exist`` () =
+        // Arrange
+        let nonExistentId = "NON_EXISTENT_ID_12345"
+
+        // Act
+        let result = CIMSystemGUI.Services.CinemaService.getHallById nonExistentId
+
+        // Assert
+        result |> should equal None
+
+    [<Fact>]
+    let ``getAllPhysicalHalls should return a list`` () =
+        // Act
+        let halls = CIMSystemGUI.Services.CinemaService.getAllPhysicalHalls ()
+
+        // Assert
+        halls |> should be instanceOfType<PhysicalHall list>
+
+    [<Fact>]
+    let ``getAllMovies should return a list`` () =
+        // Act
+        let movies = CIMSystemGUI.Services.CinemaService.getAllMovies ()
+
+        // Assert
+        movies |> should be instanceOfType<Movie list>
+
+    [<Fact>]
+    let ``getAllSessions should return a list`` () =
+        // Act
+        let sessions = CIMSystemGUI.Services.CinemaService.getAllSessions ()
+
+        // Assert
+        sessions |> should be instanceOfType<CinemaHall list>
