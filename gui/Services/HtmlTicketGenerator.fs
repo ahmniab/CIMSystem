@@ -2,6 +2,7 @@ namespace CIMSystemGUI.Services
 
 open System
 open System.IO
+open System.Diagnostics
 open CIMSystemGUI.Models
 open CIMSystemGUI.Helpers
 open QRCoder
@@ -17,12 +18,17 @@ module HtmlTicketGenerator =
         $"data:image/png;base64,{base64}"
 
     let generateTicketHtml (ticketInfo: TicketInfo) =
+        let movieTitle = ticketInfo.MovieTitle
+        let hallName = ticketInfo.HallName
+        let customerName = ticketInfo.CustomerName
         let bookingDate = ticketInfo.BookingDate.ToString("yyyy-MM-dd")
         let bookingTime = ticketInfo.BookingDate.ToString("HH:mm")
         let generatedTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+        let ticketIdStr = string ticketInfo.TicketId 
+        
         let seatNumber = sprintf "R%02d-S%02d" ticketInfo.SeatRow ticketInfo.SeatColumn
         
-        let qrImageSrc = generateQrCodeBase64 ticketInfo.TicketId
+        let qrImageSrc = generateQrCodeBase64 ticketIdStr
 
         sprintf
             """<!DOCTYPE html>
@@ -50,6 +56,11 @@ module HtmlTicketGenerator =
 
         .ticket-id { background: #f1f3f5; text-align: center; padding: 10px; font-family: monospace; font-size: 12px; color: #555; border-top: 1px dashed #ccc; }
         .footer { text-align: center; font-size: 10px; color: #999; padding: 10px; background: #fff; }
+        
+        @media print {
+            body { background: none; -webkit-print-color-adjust: exact; }
+            .ticket { box-shadow: none; width: 100%%; max-width: none; }
+        }
     </style>
 </head>
 <body>
@@ -95,18 +106,21 @@ module HtmlTicketGenerator =
             Printed: %s
         </div>
     </div>
+    <script>
+        window.onload = function() { window.print(); }
+    </script>
 </body>
 </html>"""
-            ticketInfo.MovieTitle    
-            ticketInfo.MovieTitle    
-            ticketInfo.HallName      
-            ticketInfo.CustomerName  
-            bookingDate              
-            bookingTime              
-            seatNumber               
-            qrImageSrc               
-            ticketInfo.TicketId      
-            generatedTime            
+            movieTitle      
+            movieTitle      
+            hallName        
+            customerName    
+            bookingDate     
+            bookingTime     
+            seatNumber      
+            qrImageSrc      
+            ticketIdStr     
+            generatedTime   
 
     let saveTicketAsHtml (ticketInfo: TicketInfo) =
         try
@@ -119,3 +133,18 @@ module HtmlTicketGenerator =
             | Result.Error msg -> Result.Error msg
         with ex ->
             Result.Error $"Failed to save ticket as HTML: {ex.Message}"
+
+    let openTicketInBrowser (filePath: string) =
+        try
+            let psi = new ProcessStartInfo()
+            psi.FileName <- filePath
+            psi.UseShellExecute <- true
+            Process.Start(psi) |> ignore
+            Result.Ok "Ticket sent to printer service (Browser)"
+        with ex ->
+            Result.Error $"Failed to open ticket for printing: {ex.Message}"
+
+    let saveAndPrintTicket (ticketInfo: TicketInfo) =
+        match saveTicketAsHtml ticketInfo with
+        | Result.Ok filePath -> openTicketInBrowser filePath
+        | Result.Error err -> Result.Error err

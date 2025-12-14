@@ -16,10 +16,8 @@ module TicketHelpers =
             $"{msg}\n⚠️ Ticket created but HTML generation failed: {htmlError}\n📋 Ticket ID: {ticketInfo.TicketId}"
 
     let handleTicketGeneration (msg: string) (ticketInfo: TicketInfo) =
-        // Check if ticket exists and try to generate HTML
         match CIMSystemGUI.Services.TicketService.getTicketInfo ticketInfo.TicketId with
         | Some(_, false) ->
-            // Try to generate HTML ticket
             let htmlResult = generateHtmlTicket ticketInfo
             createSuccessMessage msg ticketInfo htmlResult
         | _ -> $"{msg}\n📋 Ticket ID: {ticketInfo.TicketId}"

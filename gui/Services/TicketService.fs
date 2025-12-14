@@ -6,14 +6,12 @@ open CIMSystemGUI.Data
 
 module TicketService =
 
-    // Generate simple ticket ID based on ticket data
     let private generateTicketId (customerName: string) (seatInfo: string) (bookingTime: DateTime) =
         let formattedTime = bookingTime.ToString("yyyy-MM-dd-HH-mm-ss")
         let data = $"{customerName}:{seatInfo}:{formattedTime}"
         let hash = data.GetHashCode().ToString("X")
         $"TKT-{hash}"
     
-    // Create a new ticket - UPDATED signature
     let createTicket (customerName: string) (hallId: string) (hallName: string) (movieTitle: string) (seatRow: int) (seatColumn: int) (bookingDate: DateTime) =
         try
             let seatInfo = $"Hall {hallName} R{seatRow} S{seatColumn}"
@@ -48,7 +46,6 @@ module TicketService =
                 | Result.Error msg -> TicketError msg
             | Result.Error msg -> TicketError msg
         with ex -> TicketError ex.Message
-    // Validate ticket by ID - UPDATED to return full info
     let validateTicket (ticketId: string) =
         try
             match DB.loadTickets() with
@@ -56,7 +53,7 @@ module TicketService =
                 match tickets |> List.tryFind (fun t -> t.TicketId = ticketId) with
                 | Some ticket ->
                     if ticket.IsRedeemed then
-                        InvalidTicket "Ticket has already been redeemed"
+                        InvalidTicket "Ticket has already been used"
                     else
                         let ticketInfo =
                             { CustomerName = ticket.CustomerName
@@ -74,7 +71,6 @@ module TicketService =
         with ex ->
             ValidationError $"Failed to validate ticket: {ex.Message}"
 
-    // Redeem ticket - UPDATED
     let redeemTicket (ticketId: string) =
         try
             match DB.loadTickets() with
@@ -84,7 +80,6 @@ module TicketService =
                     if ticket.IsRedeemed then
                         TicketError "Ticket has already been redeemed"
                     else
-                        // Mark ticket as redeemed
                         let updatedTickets =
                             tickets
                             |> List.map (fun t ->
@@ -112,7 +107,6 @@ module TicketService =
         with ex ->
             TicketError $"Failed to redeem ticket: {ex.Message}"
 
-    // Get ticket info - UPDATED
     let getTicketInfo (ticketId: string) =
         try
             match DB.loadTickets() with

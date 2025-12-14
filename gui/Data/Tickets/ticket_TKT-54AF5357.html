@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket - ddddddd</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #e0e5ec; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .ticket { background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 100%; max-width: 380px; overflow: hidden; position: relative; color: #333; }
+        .header { background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%); padding: 25px; text-align: center; color: white; }
+        .cinema-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8; margin-bottom: 5px; }
+        .movie-title { font-size: 26px; font-weight: 800; margin: 5px 0; color: #ffd700; text-shadow: 0 2px 4px rgba(0,0,0,0.3); line-height: 1.2; }
+        .content { padding: 25px; }
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .label { color: #666; font-weight: 500; }
+        .value { font-weight: 800; color: #000; text-align: right; }
+        .seat-box { background: #f8f9fa; border-radius: 12px; padding: 15px; text-align: center; margin-top: 25px; border: 2px solid #e9ecef; }
+        .seat-number { font-size: 36px; font-weight: 900; color: #4e4376; letter-spacing: 1px; }
+        .seat-label { font-size: 12px; text-transform: uppercase; color: #888; margin-top: 5px; }
+        
+        .qr-section { text-align: center; margin: 20px 0; padding: 10px; background: white; }
+        .qr-image { width: 150px; height: 150px; }
+
+        .ticket-id { background: #f1f3f5; text-align: center; padding: 10px; font-family: monospace; font-size: 12px; color: #555; border-top: 1px dashed #ccc; }
+        .footer { text-align: center; font-size: 10px; color: #999; padding: 10px; background: #fff; }
+        
+        @media print {
+            body { background: none; -webkit-print-color-adjust: exact; }
+            .ticket { box-shadow: none; width: 100%; max-width: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <div class="cinema-label">CIM Cinema Ticket</div>
+            <div class="movie-title">ddddddd</div>
+        </div>
+
+        <div class="content">
+            <div class="info-row">
+                <span class="label">Hall / Screen</span>
+                <span class="value">Hall 1</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Customer</span>
+                <span class="value">ferere</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Date</span>
+                <span class="value">2025-12-14</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Time</span>
+                <span class="value">01:05</span>
+            </div>
+
+            <div class="seat-box">
+                <div class="seat-number">R11-S11</div>
+                <div class="seat-label">Assigned Seat</div>
+            </div>
+
+            <div class="qr-section">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkQAAAJEAQAAAADfmwb3AAAB9UlEQVR4nO3bbYrDMAxF0exg9r/L2cGUGWrsyHLK0I8ocPyjkJC8gJCu5Jd0+3nR+t4oiZMsUC1YgJk6gs5pLjA/mQ5N0fYI9lJ2inbU/AK+CteIu8Y75LFe0UHe4vq6n/u9bDgMl1ASJ1mgWrCgDDP7+XbYf5aXUBInWaBasKASM8dm0H/Cud0hJXGSBaoFC6oz82+yX15CSZxkgWrBgtLMfNggKImTLFAtWFCJmdlhfmu4g5I4yQLVggXnMzOs0AeeffdKSZxkgWrBgvcyM1vLZjAtSuIkC1QLFpzPzP6h4u7jxdxpP+wIlMRJFqgWLPg8M6dbM5H2AnVqEJTESRaoFiw4m5n3K2bc5+9J2yMoiZMsUC1YUISZ4RXp2Aza6l3iwWRPSZxkgWrBgs8zc9kblm2BkjjJAtWCBVWZ2bvEbuXmDCVxkgWqBQtKMDPclVnrY4M4mOwpiZMsUC1YcA4zl/8oyj6ECb2BkjjJAtWCBSWYeeDBdHVK4iQLVAsWXIWZ4QOX0aZpMz4lcZIFqgULCjNztGRG+u8eRkmcZIFqwYI6zJyEw7nur//T66EkTrJAtWDB+5kZVnDa5wZBSZxkgWrBgkrMfG5REidZoFqwADN1BJ3TXGB+Mh2aou0R7KXsFO2o+QV8Fa4Rd413yGO9kIN8A4Q5Y9214PROAAAAAElFTkSuQmCC" class="qr-image" alt="Ticket QR Code" />
+            </div>
+        </div>
+
+        <div class="ticket-id">
+            ID: TKT-54AF5357
+        </div>
+
+        <div class="footer">
+            Printed: 2025-12-14 01:05:23
+        </div>
+    </div>
+    <script>
+        window.onload = function() { window.print(); }
+    </script>
+</body>
+</html>

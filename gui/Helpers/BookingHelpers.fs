@@ -5,7 +5,6 @@ open CIMSystemGUI.Services
 
 module BookingHelpers =
 
-    // Helper to get status message for a seat
     let getSeatStatusMessage (seat: Seat) row col =
         match seat.Status with
         | SeatStatus.Available -> $"Seat {row}-{col} is available"
@@ -15,7 +14,6 @@ module BookingHelpers =
             | None -> $"Seat {row}-{col} is booked"
         | _ -> $"Seat {row}-{col} status unknown"
 
-    // Validate input before booking
     let validateBookingInput (selectedSeat: (int * int) option) (customerName: string) =
         match selectedSeat with
         | None -> Result.Error "Please select a seat first"

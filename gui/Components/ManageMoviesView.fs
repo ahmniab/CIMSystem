@@ -1,6 +1,6 @@
 namespace CIMSystemGUI.Components
 
-open Avalonia.FuncUI        // <--- ADD THIS LINE
+open Avalonia.FuncUI
 open Avalonia.FuncUI.DSL
 open Avalonia.Controls
 open Avalonia.Layout
@@ -39,7 +39,6 @@ module ManageMoviesView =
                         TextBlock.horizontalAlignment HorizontalAlignment.Center
                     ]
 
-                    // Add Movie Form
                     StackPanel.create [
                         StackPanel.orientation Orientation.Horizontal
                         StackPanel.spacing 10.0
@@ -60,7 +59,6 @@ module ManageMoviesView =
                         ]
                     ]
 
-                    // Movies List
                     ScrollViewer.create [
                         ScrollViewer.height 400.0
                         ScrollViewer.content (
@@ -69,7 +67,7 @@ module ManageMoviesView =
                                 StackPanel.children [
                                     for movie in movies.Current do
                                         yield Border.create [
-                                            Border.background Brushes.White
+                                            Border.background Brushes.Black
                                             Border.borderBrush Brushes.LightGray
                                             Border.borderThickness 1.0
                                             Border.cornerRadius 5.0

@@ -5,9 +5,6 @@ open CIMSystemGUI.Models
 open CIMSystemGUI.Helpers
 
 module DB =
-    // ==========================================
-    // SERIALIZATION MODELS
-    // ==========================================
     
     [<CLIMutable>]
     type SerializableHall =
@@ -38,9 +35,6 @@ module DB =
           BookingDate: DateTime
           IsRedeemed: bool }
 
-    // ==========================================
-    // HELPER FUNCTIONS
-    // ==========================================
     
     let private seatsToList (seats: Seat[,]) =
         let height = seats.GetLength(0)
@@ -78,9 +72,6 @@ module DB =
                     }
         seats
 
-    // ==========================================
-    // CINEMA SESSIONS (SCHEDULED MOVIES)
-    // ==========================================
     
     let saveAllSessions (halls: CinemaHall list) =
         try
@@ -144,9 +135,6 @@ module DB =
             saveAllSessions updated
         | Result.Error msg -> Result.Error msg
 
-    // ==========================================
-    // PHYSICAL HALLS
-    // ==========================================
     
     let savePhysicalHalls (halls: PhysicalHall list) =
         try
@@ -172,9 +160,6 @@ module DB =
         with
         | ex -> Result.Error $"Failed to load physical halls: {ex.Message}"
 
-    // ==========================================
-    // MOVIES
-    // ==========================================
     
     let saveMovies (movies: Movie list) =
         try
@@ -200,9 +185,6 @@ module DB =
         with
         | ex -> Result.Error $"Failed to load movies: {ex.Message}"
 
-    // ==========================================
-    // TICKETS
-    // ==========================================
     
     let saveTickets (tickets: SerializableTicket list) =
         try
