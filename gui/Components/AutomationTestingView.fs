@@ -29,7 +29,7 @@ module AutomationTestingView =
         Component.create("AutomationTestingView", fun ctx ->
             let state = ctx.useState {
                 IsSequenceRunning = false
-                DbCheck = initialResult "1. Database Check"
+                DbCheck = initialResult "1. Files Exists Check"
                 CreateHall = initialResult "2. Create Hall"
                 CreateMovie = initialResult "3. Create Movie"
                 Schedule = initialResult "4. Schedule Session"
@@ -51,7 +51,7 @@ module AutomationTestingView =
                 state.Set { state.Current with 
                                 IsSequenceRunning = true
                                 ExpandedSteps = Set.empty
-                                DbCheck = initialResult "1. Database Check"
+                                DbCheck = initialResult "1. Files Exists Check"
                                 CreateHall = initialResult "2. Create Hall"
                                 CreateMovie = initialResult "3. Create Movie"
                                 Schedule = initialResult "4. Schedule Session"

@@ -48,18 +48,18 @@ module AutomationService =
 
     let testDatabase () =
         async {
-            let inputs = Map [ "Action", "Check DB Connection" ]
+            let inputs = Map [ "Action", "Check Storage" ]
             try
                 match DB.loadPhysicalHalls() with
                 | Ok count -> 
-                    let outputs = Map [ "Status", "Connected"; "HallsCount", string (List.length count) ]
-                    return { StepName = "Database Check"; Status = Passed; Timestamp = DateTime.Now; 
-                             Details = { Inputs = inputs; Outputs = outputs; Logs = ["Connection successful"] } }
+                    let outputs = Map [ "Status", "Files Are OK"; "HallsCount", string (List.length count) ]
+                    return { StepName = "Files Exists Check"; Status = Passed; Timestamp = DateTime.Now; 
+                             Details = { Inputs = inputs; Outputs = outputs; Logs = ["Check successful"] } }
                 | Result.Error e -> 
-                    return { StepName = "Database Check"; Status = Failed e; Timestamp = DateTime.Now;
-                             Details = { Inputs = inputs; Outputs = Map.empty; Logs = ["Connection failed"] } }
+                    return { StepName = "Files Exists Check"; Status = Failed e; Timestamp = DateTime.Now;
+                             Details = { Inputs = inputs; Outputs = Map.empty; Logs = ["Check failed"] } }
             with ex ->
-                return { StepName = "Database Check"; Status = Failed ex.Message; Timestamp = DateTime.Now;
+                return { StepName = "Files Exists Check"; Status = Failed ex.Message; Timestamp = DateTime.Now;
                          Details = { Inputs = inputs; Outputs = Map.empty; Logs = [ex.Message] } }
         }
 
@@ -158,7 +158,7 @@ module AutomationService =
 
                     let request = { Row = row; Column = col; CustomerName = customer }
                     match CinemaService.bookSeat session request with
-                    | BookingResult.SuccessWithTicket (_, ticket) ->
+                    | BookingResult.Success (_, ticket) ->
                         sharedContext.CreatedTicketId <- Some ticket.TicketId
                         let outputs = Map [ "TicketId", ticket.TicketId; "SeatStatus", "Booked" ]
                         return { StepName = "Book Seat"; Status = Passed; Timestamp = DateTime.Now;
