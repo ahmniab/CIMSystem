@@ -41,7 +41,6 @@ module SeatGridView =
               StackPanel.horizontalAlignment HorizontalAlignment.Center
               StackPanel.children
                   [
-                    // Screen
                     Border.create
                         [ Border.background Brushes.DarkGray
                           Border.height 30.0
@@ -57,7 +56,6 @@ module SeatGridView =
                                     TextBlock.fontWeight FontWeight.Bold ]
                           ) ]
 
-                    // Seats grid
                     StackPanel.create
                         [ StackPanel.orientation Orientation.Vertical
                           StackPanel.spacing 3.0
@@ -70,7 +68,6 @@ module SeatGridView =
                                               StackPanel.horizontalAlignment HorizontalAlignment.Center
                                               StackPanel.children
                                                   [
-                                                    // Row label
                                                     yield
                                                         TextBlock.create
                                                             [ TextBlock.text $"R{row:D2}"
@@ -80,7 +77,6 @@ module SeatGridView =
                                                               TextBlock.textAlignment TextAlignment.Center
                                                               TextBlock.fontWeight FontWeight.Bold ]
 
-                                                    // Seats in this row
                                                     for col in 1 .. props.Cinema.Width do
                                                         let seat = props.Cinema.Seats.[row - 1, col - 1]
 

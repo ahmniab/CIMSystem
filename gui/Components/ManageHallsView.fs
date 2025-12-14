@@ -17,12 +17,11 @@ module ManageHallsView =
             let name = ctx.useState ""
             let width = ctx.useState 10
             let height = ctx.useState 10
-            // 1. ضيفنا State لرسالة الخطأ
             let errorMessage = ctx.useState ""
 
             let refresh () = 
                 halls.Set (CinemaService.getAllPhysicalHalls())
-                errorMessage.Set "" // نضف الرسالة مع كل تحديث
+                errorMessage.Set "" 
 
             let handleAdd () =
                 if not (System.String.IsNullOrWhiteSpace(name.Current)) then
@@ -31,16 +30,13 @@ module ManageHallsView =
                         name.Set ""
                         refresh()
                     with ex ->
-                        // لو حصل خطأ في الإضافة
                         errorMessage.Set $"Error adding: {ex.Message}"
 
-            // 2. دالة التعامل مع المسح بشكل آمن
             let handleDelete id =
                 try
                     CinemaService.deletePhysicalHall id |> ignore
                     refresh()
                 with ex ->
-                    // نظهر رسالة الخطأ لو فيه ارتباطات
                     errorMessage.Set $"Cannot delete: Hall involves active Showtimes or Reservations."
 
             StackPanel.create [
@@ -48,7 +44,6 @@ module ManageHallsView =
                 StackPanel.children [
                     TextBlock.create [ TextBlock.text "🏗️ Manage Physical Halls"; TextBlock.fontSize 24.0; TextBlock.fontWeight FontWeight.Bold; TextBlock.horizontalAlignment HorizontalAlignment.Center ]
 
-                    // مكان عرض رسالة الخطأ
                     if not (System.String.IsNullOrEmpty(errorMessage.Current)) then
                         TextBlock.create [ 
                             TextBlock.text errorMessage.Current
@@ -57,7 +52,6 @@ module ManageHallsView =
                             TextBlock.horizontalAlignment HorizontalAlignment.Center
                         ]
 
-                    // Form (نفس الكود القديم...)
                     Border.create [
                         Border.background Brushes.Black; Border.padding 15.0; Border.cornerRadius 10.0
                         Border.child (
@@ -81,7 +75,6 @@ module ManageHallsView =
                         )
                     ]
 
-                    // List
                     ScrollViewer.create [
                         ScrollViewer.height 400.0
                         ScrollViewer.content (
@@ -99,7 +92,6 @@ module ManageHallsView =
                                                             Button.content "Delete"
                                                             Button.background Brushes.Red
                                                             Button.foreground Brushes.White
-                                                            // 3. نستخدم الدالة الجديدة هنا
                                                             Button.onClick (fun _ -> handleDelete hall.Id) 
                                                         ]
                                                         StackPanel.create [

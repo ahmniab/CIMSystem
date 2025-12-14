@@ -76,12 +76,9 @@ module StaffValidationView =
                                     try
                                         use mat = new Mat()
                                         if cap.Read(mat) && not (mat.Empty()) then
-                                            // 1. Update UI Image
                                             let bitmap = CameraHelper.matToBitmap mat
                                             Dispatcher.UIThread.Post(fun () -> cameraImage.Set bitmap)
 
-                                            // 2. Scan QR Code
-                                            // FIX: Destructure the tuple (text, points) to get just the text
                                             let qrCodeText, _ = detector.DetectAndDecode(mat)
                                             
                                             if not (String.IsNullOrWhiteSpace(qrCodeText)) then

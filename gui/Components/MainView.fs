@@ -23,13 +23,11 @@ module MainView =
         | AdminDashboard
         | ManageMovies
         | ManageHalls
-        | AutomationTesting // Added new state here
+        | AutomationTesting
 
-    // دالة مساعدة لتحميل الصورة بأمان
     let private loadImage (path: string) =
         try
             if File.Exists(path) then
-                // تحميل الصورة من الملف
                 new Bitmap(path)
             else
                 null
@@ -39,10 +37,8 @@ module MainView =
         Component(fun ctx ->
             let currentView = ctx.useState Dashboard
             
-            // Load sessions (schedules) on startup
             let availableSessions = ctx.useState (CinemaService.getAllSessions()) 
 
-            // تحميل صورة الخلفية
             let bgImage = loadImage "Backgrounds/mainView.jpg"
 
             let renderContent () =
@@ -58,7 +54,7 @@ module MainView =
                                 TextBlock.fontSize 32.0
                                 TextBlock.fontWeight FontWeight.Bold
                                 TextBlock.foreground Brushes.White
-                                TextBlock.horizontalAlignment HorizontalAlignment.Center // تأكيد توسيط العنوان
+                                TextBlock.horizontalAlignment HorizontalAlignment.Center 
                                 TextBlock.margin (0.0, 0.0, 0.0, 30.0)
                             ]
                             
@@ -80,7 +76,7 @@ module MainView =
                                 Button.content "👮 Staff Ticket Check" 
                                 Button.fontSize 18.0
                                 Button.width 250.0
-                                Button.horizontalAlignment HorizontalAlignment.Center // <--- تضاف هنا أيضاً
+                                Button.horizontalAlignment HorizontalAlignment.Center 
                                 Button.horizontalContentAlignment HorizontalAlignment.Center
                                 Button.background Brushes.DarkBlue
                                 Button.padding (10.0, 15.0)
@@ -108,7 +104,7 @@ module MainView =
                                 Button.padding (10.0, 15.0)
                                 Button.background Brushes.DarkBlue
                                 Button.foreground Brushes.White
-                                Button.onClick (fun _ -> currentView.Set AutomationTesting) // Corrected to use the Union Case
+                                Button.onClick (fun _ -> currentView.Set AutomationTesting) 
                             ]
                         ]
                     ] :> Types.IView
@@ -215,13 +211,11 @@ module MainView =
 
             let backgroundBrush =
                 if bgImage <> null then
-                    // الطريقة الصحيحة لتعريف ImageBrush في F#
                     let brush = ImageBrush()
                     brush.Source <- bgImage
                     brush.Stretch <- Stretch.UniformToFill
                     brush :> IBrush
                 else
-                    // لون احتياطي في حالة عدم وجود الصورة
                     SolidColorBrush(Color.Parse("#2d2d2d")) :> IBrush
 
             Border.create [

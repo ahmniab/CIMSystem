@@ -8,25 +8,22 @@ open CIMSystemGUI.Models
 
 module MovieSelectionView =
 
-    // 1. أضفنا (onBack: unit -> unit) في الباراميترز
     let view (halls: CinemaHall list) (onSelectHall: CinemaHall -> unit) (onBack: unit -> unit) =
         DockPanel.create [
             DockPanel.children [
                 
-                // 2. زر الرجوع في الأعلى
                 Button.create [
                     Button.dock Dock.Top
                     Button.horizontalAlignment HorizontalAlignment.Left
                     Button.content "← Back to Dashboard"
                     Button.fontSize 16.0
                     Button.margin (20.0, 20.0, 0.0, 0.0)
-                    Button.background Brushes.Gray // خلفية شفافة لشكله أجمل
-                    Button.foreground Brushes.Black // أو Brushes.White حسب خلفية البرنامج لديك
+                    Button.background Brushes.Gray 
+                    Button.foreground Brushes.Black
                     Button.borderThickness 0.0
                     Button.onClick (fun _ -> onBack())
                 ]
 
-                // 3. المحتوى الأصلي (Scroll Viewer)
                 ScrollViewer.create [
                     ScrollViewer.content (
                         StackPanel.create [
@@ -35,18 +32,15 @@ module MovieSelectionView =
                             StackPanel.verticalAlignment VerticalAlignment.Center
                             StackPanel.children [
                                 
-                                // العنوان
                                 TextBlock.create [
                                     TextBlock.text "🎬 Now Showing"
                                     TextBlock.fontSize 28.0
                                     TextBlock.fontWeight FontWeight.Bold
                                     TextBlock.horizontalAlignment HorizontalAlignment.Center
                                     TextBlock.margin (0.0, 20.0)
-                                    // تأكد أن هذا اللون مناسب لخلفية تطبيقك
-                                    TextBlock.foreground Brushes.Black 
+                                    TextBlock.foreground Brushes.White 
                                 ]
 
-                                // حاوية الكروت
                                 WrapPanel.create [
                                     WrapPanel.horizontalAlignment HorizontalAlignment.Center
                                     WrapPanel.children [
@@ -55,8 +49,9 @@ module MovieSelectionView =
                                                 Button.width 220.0
                                                 Button.height 140.0
                                                 Button.margin 15.0
+                                                Button.foreground Brushes.White
                                                 Button.cornerRadius 15.0
-                                                Button.background Brushes.WhiteSmoke
+                                                Button.background Brushes.DarkBlue
                                                 Button.borderBrush Brushes.Gray
                                                 Button.borderThickness 1.0
                                                 
@@ -80,11 +75,11 @@ module MovieSelectionView =
                                                                 TextBlock.fontWeight FontWeight.Bold
                                                                 TextBlock.textWrapping TextWrapping.Wrap
                                                                 TextBlock.textAlignment TextAlignment.Center
-                                                                TextBlock.foreground Brushes.Black
+                                                                TextBlock.foreground Brushes.White
                                                             ]
                                                             
                                                             TextBlock.create [
-                                                                TextBlock.text $"Hall: {hall.Id}"
+                                                                TextBlock.text $"Hall: {hall.Name}"
                                                                 TextBlock.fontSize 12.0
                                                                 TextBlock.foreground Brushes.DarkGray
                                                                 TextBlock.horizontalAlignment HorizontalAlignment.Center
@@ -93,7 +88,7 @@ module MovieSelectionView =
                                                             TextBlock.create [
                                                                 TextBlock.text "Click to Book"
                                                                 TextBlock.fontSize 10.0
-                                                                TextBlock.foreground Brushes.Blue
+                                                                TextBlock.foreground Brushes.White
                                                                 TextBlock.horizontalAlignment HorizontalAlignment.Center
                                                             ]
                                                         ]
