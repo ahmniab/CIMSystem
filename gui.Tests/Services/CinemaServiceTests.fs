@@ -4,6 +4,7 @@ open System
 open Xunit
 open FsUnit.Xunit
 open CIMSystemGUI.Models
+open CIMSystemGUI.Services
 
 module CinemaServiceTests =
 
@@ -230,7 +231,7 @@ module CinemaServiceTests =
                       BookingTime = None } }
 
         // Act
-        let total = CIMSystemGUI.Services.CinemaService.getTotalSeatsCount hall
+        let total = CinemaService.getTotalSeatsCount hall
 
         // Assert
         total |> should equal 80
@@ -261,7 +262,7 @@ module CinemaServiceTests =
               Seats = seats }
 
         // Act
-        let available = CIMSystemGUI.Services.CinemaService.getAvailableSeatsCount hall
+        let available = CinemaService.getAvailableSeatsCount hall
 
         // Assert
         available |> should equal 30
@@ -308,7 +309,7 @@ module CinemaServiceTests =
               Seats = seats }
 
         // Act
-        let available = CIMSystemGUI.Services.CinemaService.getAvailableSeatsCount hall
+        let available = CinemaService.getAvailableSeatsCount hall
 
         // Assert
         available |> should equal 27
@@ -322,7 +323,7 @@ module CinemaServiceTests =
 
         // Act
         let isAvailable =
-            CIMSystemGUI.Services.CinemaService.isHallAvailable physicalHallId newStart newEnd
+            CinemaService.isHallAvailable physicalHallId newStart newEnd
 
         // Assert - should be true since there are no existing sessions in test environment
         isAvailable |> should equal true
@@ -333,7 +334,7 @@ module CinemaServiceTests =
         let nonExistentId = "NON_EXISTENT_ID_12345"
 
         // Act
-        let result = CIMSystemGUI.Services.CinemaService.getHallById nonExistentId
+        let result = CinemaService.getHallById nonExistentId
 
         // Assert
         result |> should equal None
@@ -341,7 +342,7 @@ module CinemaServiceTests =
     [<Fact>]
     let ``getAllPhysicalHalls should return a list`` () =
         // Act
-        let halls = CIMSystemGUI.Services.CinemaService.getAllPhysicalHalls ()
+        let halls = CinemaService.getAllPhysicalHalls ()
 
         // Assert
         halls |> should be instanceOfType<PhysicalHall list>
@@ -349,7 +350,7 @@ module CinemaServiceTests =
     [<Fact>]
     let ``getAllMovies should return a list`` () =
         // Act
-        let movies = CIMSystemGUI.Services.CinemaService.getAllMovies ()
+        let movies = CinemaService.getAllMovies ()
 
         // Assert
         movies |> should be instanceOfType<Movie list>
@@ -357,7 +358,7 @@ module CinemaServiceTests =
     [<Fact>]
     let ``getAllSessions should return a list`` () =
         // Act
-        let sessions = CIMSystemGUI.Services.CinemaService.getAllSessions ()
+        let sessions = CinemaService.getAllSessions ()
 
         // Assert
         sessions |> should be instanceOfType<CinemaHall list>
